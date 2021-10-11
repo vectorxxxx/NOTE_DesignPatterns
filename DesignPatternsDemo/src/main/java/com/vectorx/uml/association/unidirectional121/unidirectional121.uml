@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.uml.association.unidirectional121</OriginalElement>
+  <nodes>
+    <node x="0.0" y="80.0">com.vectorx.uml.association.unidirectional121.Person</node>
+    <node x="9.0" y="0.0">com.vectorx.uml.association.unidirectional121.IDCard</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.uml.association.unidirectional121.Person" target="com.vectorx.uml.association.unidirectional121.IDCard" relationship="TO_ONE">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="59.0" y="68.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

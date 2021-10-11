@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.uml.composition</OriginalElement>
+  <nodes>
+    <node x="38.375" y="80.0">com.vectorx.uml.composition.Computer</node>
+    <node x="0.0" y="0.0">com.vectorx.uml.composition.Mouse</node>
+    <node x="119.0" y="0.0">com.vectorx.uml.composition.Monitor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.uml.composition.Computer" target="com.vectorx.uml.composition.Monitor" relationship="TO_ONE">
+      <point x="60.625" y="-39.5" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.uml.composition.Computer" target="com.vectorx.uml.composition.Monitor" relationship="CREATE">
+      <point x="14.125" y="-39.5" />
+      <point x="-46.5" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.uml.composition.Computer" target="com.vectorx.uml.composition.Mouse" relationship="CREATE">
+      <point x="-62.875" y="-39.5" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.uml.composition.Computer" target="com.vectorx.uml.composition.Mouse" relationship="TO_ONE">
+      <point x="-47.875" y="-39.5" />
+      <point x="15.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="113.5" y="79.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

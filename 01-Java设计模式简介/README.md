@@ -993,7 +993,7 @@ class SchoolManager {
 - 2）在讲解设计模式时，我们必然会使用类图，为了让学员们能够把设计模式学到位，需要先给大家讲解类图
 - 3）温馨提示：如果已经掌握 UML 类图的学员，可以直接听设计模式的章节
 
-### 4.3、UML 图
+### 4.3、UML 类图
 
 - 1）用于描述系统中的类（对象）本身的组成和类（对象）之间的各种静态关系
 - 2）类之间的关系：<mark>依赖、泛化（继承）、实现、关联、聚合与组合</mark>
@@ -1013,3 +1013,188 @@ public class Person {
 ```
 
 ![image-20211010171055294](https://i.loli.net/2021/10/10/ouU9Jefp1QSWzqF.png)
+
+### 4.4、类图——依赖关系（dependence）
+
+<mark>只要是在类中用到了对方，那么他们之间就存在依赖关系</mark>。如果没有对方，连编译都通过不了
+
+```java
+public class PersonServiceBean {
+    // 类的成员属性
+    private PersonDao personDao;
+
+    // 方法接收的参数类型
+    public void save(Person person) {
+    }
+
+    // 方法的返回类型
+    public IDCard getIDCard(Integer personid) {
+        return null;
+    }
+
+    // 方法中使用到
+    public void modify() {
+        Department department = new Department();
+    }
+
+}
+```
+
+**UML 类图**
+
+![Package dependence](https://i.loli.net/2021/10/11/lUJKYBCsefr2Qzp.png)
+
+**小结**
+
+- 1）类中用到了对方
+- 2）类的成员属性
+- 3）方法的返回类型
+- 4）方法接收的参数类型
+- 5）方法中使用到
+
+#### 4.5、类图——泛化（Generalization）
+
+<mark>泛化关系实际上就是继承关系</mark>，它是依赖关系的特例
+
+```java
+public abstract class DaoSupport {
+    public void save(Object entity) {
+    }
+
+    public void delete(Object id) {
+    }
+}
+public class PersonServiceBean extends DaoSupport {
+}
+```
+
+**UML 类图**
+
+![Package generalization](https://i.loli.net/2021/10/11/VUGDcRHgQNmhq5s.png)
+
+**小结**
+
+- 1）泛化关系实际上就是继承关系
+- 2）如果 A 类继承了 B 类，我们就说 A 和 B 存在泛化关系
+
+### 4.6、类图——实现（Implementation）
+
+<mark>实现关系实际上就是 A 类实现 B 类</mark>，它是依赖关系的特例
+
+```java
+public interface PersonService {
+    void delete(Integer id);
+}
+public class PersonServiceBean implements PersonService {
+    @Override
+    public void delete(Integer id) {
+        System.out.println("delete...");
+    }
+}
+```
+
+**UML 类图**
+
+![Package implementation](https://i.loli.net/2021/10/11/FI8D3YXkr6fvHTS.png)
+
+### 4.7、类图——关联关系（Association）
+
+<mark>关联关系实际上就是类与类之间的联系</mark>，它是依赖关系的特例
+
+- <mark>关联具有导航性</mark>：即双向关系或单向关系
+- <mark>关系具有多重性</mark>：如“1”（表示有且仅有一个），“0...”（表示0个或者多个），“0，1”（表示0个或者一个），“n...m”（表示n到m个都可以），“m...*”（表示至少m个）
+
+![image-20211011211125957](https://i.loli.net/2021/10/11/BrpbU2NcgERuvIH.png)
+
+#### 单向一对一关系
+
+```java
+public class Person {
+	private IDCard card;
+}
+public class IDCard {}
+```
+
+**UML 类图**
+
+![Package unidirectional121](https://i.loli.net/2021/10/11/9RTOIJLBYCu7zvF.png)
+
+#### 双向一对一关系
+
+```java
+public class Person {
+	private IDCard card;
+}
+public class IDCard {
+	private Person person;
+}
+```
+
+**UML 类图**
+
+![Package bidirectional121](https://i.loli.net/2021/10/11/PtBlruFH4AQ9no1.png)
+
+### 4.8、类图——聚合关系（Aggregation）
+
+<mark>聚合关系表示的是整体和部分的关系，整体与部分可以分开</mark>。聚合关系是关联关系的特例，所以它具有关联的导航性与多重性
+
+如：一台电脑由键盘（keyboard）、显示器（monitor），鼠标等组成；组成电脑的各个配件是可以从电脑上分离出来的，使用带空心菱形的实线来表示：
+
+![image-20211011211749247](https://i.loli.net/2021/10/11/Gi7SjJWyb1z35fm.png)
+
+```java
+public class Mouse {}
+public class Monitor {}
+public class Computer {
+    private Mouse mouse;
+    private Monitor monitor;
+
+    public void setMouse(Mouse mouse) {
+        this.mouse = mouse;
+    }
+
+    public void setMonitor(Monitor monitor) {
+        this.monitor = monitor;
+    }
+}
+```
+
+**UML 类图**
+
+![Package aggregation](https://i.loli.net/2021/10/11/qMQnyCLclTfwIHP.png)
+
+### 4.9、类图——组合关系（Composition）
+
+<mark>组合关系也是整体与部分的关系，但是整体与部分不可以分开</mark>
+
+如果我们认为 Mouse、Monitor 和 Computer 是不可分离的，则升级为组合关系
+
+```java
+public class Mouse {}
+public class Monitor {}
+public class Computer {
+    private Mouse mouse = new Mouse();
+    private Monitor monitor = new Monitor();
+}
+```
+
+**UML 类图**
+
+![composition](https://i.loli.net/2021/10/11/VfhSGclMY5rIz3s.png)
+
+再看一个案例，在程序中我们定义实体：Person 与 IDCard、Head，那么 Head 和 Person 就是组合，IDCard 和 Person 就是聚合
+
+```java
+public class IDCard{}
+public class Head{}
+public class Person{
+    private IDCard card;
+    private Head head = new Head();
+}
+```
+
+**UML 类图**
+
+![image-20211011215441995](https://i.loli.net/2021/10/11/dIOPNtgUzZw6D1T.png)
+
+但是如果在程序中，Person 实体中定义了对 IDCard 进行级联删除，即删除 Person 时连同 IDCard 一起删除，那么 IDCard 和 Person 就是组合了

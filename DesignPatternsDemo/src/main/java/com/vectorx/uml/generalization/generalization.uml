@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.uml.generalization</OriginalElement>
+  <nodes>
+    <node x="8.5" y="0.0">com.vectorx.uml.generalization.DaoSupport</node>
+    <node x="0.0" y="129.0">com.vectorx.uml.generalization.PersonServiceBean</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.uml.generalization.PersonServiceBean" target="com.vectorx.uml.generalization.DaoSupport" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="90.0" y="79.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
