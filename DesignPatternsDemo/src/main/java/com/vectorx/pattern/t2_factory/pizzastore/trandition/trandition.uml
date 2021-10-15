@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t2_factory.pizzastore.trandition</OriginalElement>
+  <nodes>
+    <node x="48.053571428571445" y="0.0">com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.Pizza</node>
+    <node x="10.5" y="199.0">com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.GreekPizza</node>
+    <node x="76.21428571428572" y="413.0">com.vectorx.pattern.t2_factory.pizzastore.trandition.order.PizzaStore</node>
+    <node x="163.5" y="199.0">com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.PepperPizza</node>
+    <node x="91.21428571428572" y="307.0">com.vectorx.pattern.t2_factory.pizzastore.trandition.order.OrderPizza</node>
+    <node x="320.5" y="199.0">com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.CheesePizza</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.GreekPizza" target="com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="77.0" y="174.0" />
+      <point x="114.554" y="174.0" />
+      <point x="4.2857142855723396E-4" y="74.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.trandition.order.OrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.Pizza" relationship="DEPENDENCY">
+      <point x="-64.0" y="0.0" />
+      <point x="-7.0" y="335.0" />
+      <point x="-7.0" y="74.5" />
+      <point x="-66.5" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.trandition.order.OrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.CheesePizza" relationship="CREATE">
+      <point x="64.0" y="0.0" />
+      <point x="388.5" y="335.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.trandition.order.OrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.GreekPizza" relationship="CREATE">
+      <point x="-19.214285714285722" y="-28.0" />
+      <point x="59.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.trandition.order.PizzaStore" target="com.vectorx.pattern.t2_factory.pizzastore.trandition.order.OrderPizza" relationship="CREATE">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.CheesePizza" target="com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="388.5" y="174.0" />
+      <point x="114.554" y="174.0" />
+      <point x="4.2857142855723396E-4" y="74.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.PepperPizza" target="com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="232.0" y="174.0" />
+      <point x="114.554" y="174.0" />
+      <point x="4.2857142855723396E-4" y="74.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.trandition.order.OrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.trandition.pizza.PepperPizza" relationship="CREATE">
+      <point x="15.785714285714278" y="-28.0" />
+      <point x="-61.0" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="225.0" y="234.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t2_factory.pizzastore.factorymethod</OriginalElement>
+  <nodes>
+    <node x="731.1866666666667" y="199.0">com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.OrderPizza</node>
+    <node x="468.6166666666667" y="0.0">com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.Pizza</node>
+    <node x="343.0" y="222.5">com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.LDPepperPizza</node>
+    <node x="339.1866666666667" y="384.0">com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.BJOrderPizza</node>
+    <node x="519.0" y="222.5">com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.LDCheesePizza</node>
+    <node x="710.0" y="384.0">com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.LDOrderPizza</node>
+    <node x="0.0" y="222.5">com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.BJCheesePizza</node>
+    <node x="705.6866666666667" y="492.0">com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.PizzaStore</node>
+    <node x="171.0" y="222.5">com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.BJPepperPizza</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.OrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.Pizza" relationship="DEPENDENCY">
+      <point x="-93.99966666666671" y="0.0" />
+      <point x="692.0" y="250.5" />
+      <point x="692.0" y="74.5" />
+      <point x="66.50033333333329" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.BJOrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.BJPepperPizza" relationship="CREATE">
+      <point x="-94.0" y="-15.0" />
+      <point x="247.0" y="397.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.PizzaStore" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.BJOrderPizza" relationship="CREATE">
+      <point x="-79.0" y="0.0" />
+      <point x="433.1866666666667" y="520.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.LDOrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.LDCheesePizza" relationship="CREATE">
+      <point x="-94.0" y="-15.0" />
+      <point x="596.5" y="397.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.BJOrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.OrderPizza" relationship="GENERALIZATION">
+      <point x="3.3333333328755543E-4" y="-28.0" />
+      <point x="433.187" y="343.0" />
+      <point x="825.187" y="343.0" />
+      <point x="3.3333333328755543E-4" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.PizzaStore" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.OrderPizza" relationship="DEPENDENCY">
+      <point x="79.0" y="0.0" />
+      <point x="915.5" y="520.0" />
+      <point x="90.31333333333328" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.LDOrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.Pizza" relationship="DEPENDENCY">
+      <point x="-94.0" y="0.0" />
+      <point x="692.0" y="412.0" />
+      <point x="692.0" y="74.5" />
+      <point x="66.50033333333329" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.LDOrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.LDPepperPizza" relationship="CREATE">
+      <point x="94.0" y="0.0" />
+      <point x="936.6866666666667" y="412.0" />
+      <point x="936.6866666666667" y="-17.5" />
+      <point x="406.0" y="-17.5" />
+      <point x="-15.0" y="-28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.BJCheesePizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="75.5" y="186.0" />
+      <point x="535.117" y="186.0" />
+      <point x="3.3333333328755543E-4" y="74.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.PizzaStore" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.LDOrderPizza" relationship="CREATE">
+      <point x="19.313333333333276" y="-28.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.BJOrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.Pizza" relationship="DEPENDENCY">
+      <point x="94.00033333333329" y="0.0" />
+      <point x="692.0" y="412.0" />
+      <point x="692.0" y="74.5" />
+      <point x="66.50033333333329" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.LDPepperPizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="421.0" y="186.0" />
+      <point x="535.117" y="186.0" />
+      <point x="3.3333333328755543E-4" y="74.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.LDOrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.OrderPizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="804.0" y="343.0" />
+      <point x="825.187" y="343.0" />
+      <point x="3.3333333328755543E-4" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.LDCheesePizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="596.5" y="186.0" />
+      <point x="535.117" y="186.0" />
+      <point x="3.3333333328755543E-4" y="74.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.BJPepperPizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="247.0" y="186.0" />
+      <point x="535.117" y="186.0" />
+      <point x="3.3333333328755543E-4" y="74.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.order.BJOrderPizza" target="com.vectorx.pattern.t2_factory.pizzastore.factorymethod.pizza.BJCheesePizza" relationship="CREATE">
+      <point x="-94.0" y="0.0" />
+      <point x="75.5" y="412.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9068100358422939" showDependencies="true" x="472.5" y="284.5869565217391" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
