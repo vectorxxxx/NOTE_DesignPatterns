@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t3_prototype.trandition</OriginalElement>
+  <nodes>
+    <node x="11.5" y="153.0">com.vectorx.pattern.t3_prototype.trandition.Client</node>
+    <node x="0.0" y="0.0">com.vectorx.pattern.t3_prototype.trandition.Sheep</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t3_prototype.trandition.Client" target="com.vectorx.pattern.t3_prototype.trandition.Sheep" relationship="CREATE">
+      <point x="0.0" y="-40.0" />
+      <point x="0.0" y="51.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="79.0" y="92.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

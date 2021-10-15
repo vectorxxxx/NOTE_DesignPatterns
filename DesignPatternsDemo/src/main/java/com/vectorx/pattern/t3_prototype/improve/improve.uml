@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t3_prototype.improve</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">com.vectorx.pattern.t3_prototype.improve.Sheep</node>
+    <node x="32.5" y="223.0">com.vectorx.pattern.t3_prototype.improve.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t3_prototype.improve.Client" target="com.vectorx.pattern.t3_prototype.improve.Sheep" relationship="CREATE">
+      <point x="0.0" y="-40.0" />
+      <point x="0.0" y="86.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="111.5" y="151.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
