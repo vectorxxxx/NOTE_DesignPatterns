@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t4_builder.trandition</OriginalElement>
+  <nodes>
+    <node x="10.5" y="175.0">com.vectorx.pattern.t4_builder.trandition.NormalRoom</node>
+    <node x="329.5" y="175.0">com.vectorx.pattern.t4_builder.trandition.HighRise</node>
+    <node x="175.5" y="175.0">com.vectorx.pattern.t4_builder.trandition.Villa</node>
+    <node x="59.083333333333314" y="0.0">com.vectorx.pattern.t4_builder.trandition.AbsHouse</node>
+    <node x="80.52083333333331" y="329.0">com.vectorx.pattern.t4_builder.trandition.Test</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t4_builder.trandition.Villa" target="com.vectorx.pattern.t4_builder.trandition.AbsHouse" relationship="GENERALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="242.5" y="150.0" />
+      <point x="126.083" y="150.0" />
+      <point x="-3.3333333331597714E-4" y="62.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.trandition.Test" target="com.vectorx.pattern.t4_builder.trandition.NormalRoom" relationship="CREATE">
+      <point x="-71.5" y="-28.0" />
+      <point x="5.020833333333314" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.trandition.HighRise" target="com.vectorx.pattern.t4_builder.trandition.AbsHouse" relationship="GENERALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="396.5" y="150.0" />
+      <point x="126.083" y="150.0" />
+      <point x="-3.3333333331597714E-4" y="62.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.trandition.NormalRoom" target="com.vectorx.pattern.t4_builder.trandition.AbsHouse" relationship="GENERALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="83.0" y="150.0" />
+      <point x="126.083" y="150.0" />
+      <point x="-3.3333333331597714E-4" y="62.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.trandition.Test" target="com.vectorx.pattern.t4_builder.trandition.Villa" relationship="CREATE">
+      <point x="71.5" y="-28.0" />
+      <point x="-11.479166666666686" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.trandition.Test" target="com.vectorx.pattern.t4_builder.trandition.HighRise" relationship="CREATE">
+      <point x="79.0" y="0.0" />
+      <point x="396.5" y="357.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.trandition.Test" target="com.vectorx.pattern.t4_builder.trandition.AbsHouse" relationship="DEPENDENCY">
+      <point x="-79.0" y="0.0" />
+      <point x="-7.0" y="357.0" />
+      <point x="-7.0" y="62.5" />
+      <point x="-67.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="232.0" y="192.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

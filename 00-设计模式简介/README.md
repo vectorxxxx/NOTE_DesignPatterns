@@ -949,7 +949,7 @@ class SchoolManager {
 
 原则是<mark>尽量使用合成/聚合的方式，而不是使用继承</mark>
 
-![image-20211010164923202](C:/Users/Archimedes/AppData/Roaming/Typora/typora-user-images/image-20211010164923202.png)
+![image-20211010164923202](https://i.loli.net/2021/10/16/1BJzZnQq3VUjdYx.png)
 
 ### 设计原则核心思想
 
@@ -967,7 +967,7 @@ class SchoolManager {
 
 - 2）UML 本身是一套符号的规定，就像数学符号和化学符号一样，这些符号用于描述软件模型中的各个元素和他们之间的关系，比如类、接口、实现、泛化、依赖、组合、聚合等
 
-![image-20211010170115892](C:/Users/Archimedes/AppData/Roaming/Typora/typora-user-images/image-20211010170115892.png)
+![image-20211010170115892](https://i.loli.net/2021/10/16/IoTvhrsHcDWl93d.png)
 
 - 3）使用 UML 来建模，常用的工具有 Rational Rose，也可以使用一些插件来建模
 

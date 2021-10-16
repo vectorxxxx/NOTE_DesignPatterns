@@ -1,4 +1,5 @@
 > 笔记来源：[尚硅谷Java设计模式（图解+框架源码剖析）](https://www.bilibili.com/video/BV1G4411c7N4)
+>
 
 [TOC]
 

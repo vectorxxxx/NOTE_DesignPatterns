@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t4_builder.improve</OriginalElement>
+  <nodes>
+    <node x="237.49999999999997" y="353.0">com.vectorx.pattern.t4_builder.improve.builder.HighRiseBuilder</node>
+    <node x="420.49999999999994" y="353.0">com.vectorx.pattern.t4_builder.improve.builder.VillaBuilder</node>
+    <node x="100.49999999999997" y="152.0">com.vectorx.pattern.t4_builder.improve.builder.HouseBuilder</node>
+    <node x="76.21136363636356" y="0.0">com.vectorx.pattern.t4_builder.improve.product.House</node>
+    <node x="574.5" y="353.0">com.vectorx.pattern.t4_builder.improve.builder.NormalRoomBuilder</node>
+    <node x="10.499999999999972" y="364.0">com.vectorx.pattern.t4_builder.improve.director.HouseDirector</node>
+    <node x="202.62045454545446" y="517.0">com.vectorx.pattern.t4_builder.improve.BuilderTest</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t4_builder.improve.director.HouseDirector" target="com.vectorx.pattern.t4_builder.improve.builder.HouseBuilder" relationship="TO_ONE">
+      <point x="0.0" y="-40.0" />
+      <point x="113.99999999999997" y="332.0" />
+      <point x="124.49999999999997" y="332.0" />
+      <point x="-48.0" y="74.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.improve.builder.VillaBuilder" target="com.vectorx.pattern.t4_builder.improve.builder.HouseBuilder" relationship="GENERALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="488.21136363636356" y="322.0" />
+      <point x="220.5" y="322.0" />
+      <point x="48.0" y="74.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.improve.BuilderTest" target="com.vectorx.pattern.t4_builder.improve.product.House" relationship="DEPENDENCY">
+      <point x="-63.19999999999999" y="-28.0" />
+      <point x="218.42045454545448" y="496.0" />
+      <point x="0.0" y="496.0" />
+      <point x="0.0" y="132.0" />
+      <point x="47.79772727272717" y="132.0" />
+      <point x="47.79772727272717" y="122.0" />
+      <point x="104.46136363636356" y="122.0" />
+      <point x="-28.25" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.improve.builder.HouseBuilder" target="com.vectorx.pattern.t4_builder.improve.product.House" relationship="CREATE">
+      <point x="-36.0" y="-74.5" />
+      <point x="136.49999999999997" y="132.0" />
+      <point x="47.79772727272717" y="132.0" />
+      <point x="47.79772727272717" y="122.0" />
+      <point x="104.46136363636356" y="122.0" />
+      <point x="-28.25" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.improve.builder.HighRiseBuilder" target="com.vectorx.pattern.t4_builder.improve.builder.HouseBuilder" relationship="GENERALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="319.0" y="332.0" />
+      <point x="488.21136363636356" y="332.0" />
+      <point x="488.21136363636356" y="322.0" />
+      <point x="220.5" y="322.0" />
+      <point x="48.0" y="74.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.improve.BuilderTest" target="com.vectorx.pattern.t4_builder.improve.builder.NormalRoomBuilder" relationship="CREATE">
+      <point x="63.19999999999999" y="-28.0" />
+      <point x="344.8204545454545" y="496.0" />
+      <point x="671.5" y="496.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.improve.director.HouseDirector" target="com.vectorx.pattern.t4_builder.improve.product.House" relationship="DEPENDENCY">
+      <point x="-69.0" y="-40.0" />
+      <point x="44.99999999999997" y="332.0" />
+      <point x="47.79772727272717" y="332.0" />
+      <point x="47.79772727272717" y="122.0" />
+      <point x="104.46136363636356" y="122.0" />
+      <point x="-28.25" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.improve.director.HouseDirector" target="com.vectorx.pattern.t4_builder.improve.builder.HouseBuilder" relationship="DEPENDENCY">
+      <point x="69.0" y="-40.0" />
+      <point x="182.99999999999997" y="332.0" />
+      <point x="172.49999999999997" y="332.0" />
+      <point x="0.0" y="74.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.improve.BuilderTest" target="com.vectorx.pattern.t4_builder.improve.builder.HighRiseBuilder" relationship="CREATE">
+      <point x="1.4210854715202004E-14" y="-28.0" />
+      <point x="281.6204545454545" y="476.0" />
+      <point x="319.0" y="476.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.improve.builder.HouseBuilder" target="com.vectorx.pattern.t4_builder.improve.product.House" relationship="TO_ONE">
+      <point x="36.0" y="-74.5" />
+      <point x="208.49999999999997" y="132.0" />
+      <point x="160.96136363636356" y="132.0" />
+      <point x="28.25" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.improve.builder.NormalRoomBuilder" target="com.vectorx.pattern.t4_builder.improve.builder.HouseBuilder" relationship="GENERALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="671.5" y="332.0" />
+      <point x="488.21136363636356" y="332.0" />
+      <point x="488.21136363636356" y="322.0" />
+      <point x="220.5" y="322.0" />
+      <point x="48.0" y="74.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.improve.BuilderTest" target="com.vectorx.pattern.t4_builder.improve.builder.VillaBuilder" relationship="CREATE">
+      <point x="31.60000000000001" y="-28.0" />
+      <point x="313.22045454545446" y="486.0" />
+      <point x="487.49999999999994" y="486.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t4_builder.improve.BuilderTest" target="com.vectorx.pattern.t4_builder.improve.director.HouseDirector" relationship="CREATE">
+      <point x="-31.59999999999998" y="-28.0" />
+      <point x="250.02045454545447" y="486.0" />
+      <point x="113.99999999999996" y="486.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8026981450252951" showDependencies="true" x="384.5" y="286.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
