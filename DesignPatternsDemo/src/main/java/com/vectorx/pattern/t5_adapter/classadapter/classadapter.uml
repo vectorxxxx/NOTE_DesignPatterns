@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t5_adapter.classadapter</OriginalElement>
+  <nodes>
+    <node x="0.0" y="106.0">com.vectorx.pattern.t5_adapter.classadapter.Phone</node>
+    <node x="64.0" y="0.0">com.vectorx.pattern.t5_adapter.classadapter.IVoltage5V</node>
+    <node x="243.0" y="0.0">com.vectorx.pattern.t5_adapter.classadapter.Voltage220V</node>
+    <node x="117.25" y="212.0">com.vectorx.pattern.t5_adapter.classadapter.Client</node>
+    <node x="214.0" y="106.0">com.vectorx.pattern.t5_adapter.classadapter.VoltageAdapter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t5_adapter.classadapter.Client" target="com.vectorx.pattern.t5_adapter.classadapter.Phone" relationship="CREATE">
+      <point x="-39.5" y="-28.0" />
+      <point x="156.75" y="187.0" />
+      <point x="97.0" y="187.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.classadapter.Client" target="com.vectorx.pattern.t5_adapter.classadapter.VoltageAdapter" relationship="CREATE">
+      <point x="39.5" y="-28.0" />
+      <point x="235.75" y="187.0" />
+      <point x="295.5" y="187.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.classadapter.VoltageAdapter" target="com.vectorx.pattern.t5_adapter.classadapter.IVoltage5V" relationship="REALIZATION">
+      <point x="-40.75" y="-28.0" />
+      <point x="254.75" y="81.0" />
+      <point x="183.25" y="81.0" />
+      <point x="39.75" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.classadapter.Phone" target="com.vectorx.pattern.t5_adapter.classadapter.IVoltage5V" relationship="DEPENDENCY">
+      <point x="0.0" y="-28.0" />
+      <point x="97.0" y="81.0" />
+      <point x="103.75" y="81.0" />
+      <point x="-39.75" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.classadapter.VoltageAdapter" target="com.vectorx.pattern.t5_adapter.classadapter.Voltage220V" relationship="GENERALIZATION">
+      <point x="34.0" y="-28.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="208.0" y="134.0" />
+  <SelectedNodes>
+    <node>com.vectorx.pattern.t5_adapter.classadapter.Voltage220V</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

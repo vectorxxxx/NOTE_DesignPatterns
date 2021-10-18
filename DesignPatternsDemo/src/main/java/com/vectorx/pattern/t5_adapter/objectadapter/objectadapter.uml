@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t5_adapter.objectadapter</OriginalElement>
+  <nodes>
+    <node x="213.99999999999997" y="130.0">com.vectorx.pattern.t5_adapter.objectadapter.VoltageAdapter</node>
+    <node x="301.7179487179487" y="0.0">com.vectorx.pattern.t5_adapter.objectadapter.Voltage220V</node>
+    <node x="103.28205128205124" y="12.0">com.vectorx.pattern.t5_adapter.objectadapter.IVoltage5V</node>
+    <node x="0.0" y="142.0">com.vectorx.pattern.t5_adapter.objectadapter.Phone</node>
+    <node x="249.49999999999997" y="286.0">com.vectorx.pattern.t5_adapter.objectadapter.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t5_adapter.objectadapter.Phone" target="com.vectorx.pattern.t5_adapter.objectadapter.IVoltage5V" relationship="DEPENDENCY">
+      <point x="85.78205128205124" y="-40.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.objectadapter.VoltageAdapter" target="com.vectorx.pattern.t5_adapter.objectadapter.Voltage220V" relationship="TO_ONE">
+      <point x="59.71794871794867" y="-52.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.objectadapter.Client" target="com.vectorx.pattern.t5_adapter.objectadapter.VoltageAdapter" relationship="CREATE">
+      <point x="-15.0" y="-40.0" />
+      <point x="-15.0" y="52.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.objectadapter.VoltageAdapter" target="com.vectorx.pattern.t5_adapter.objectadapter.IVoltage5V" relationship="REALIZATION">
+      <point x="-107.00000000000003" y="-52.0" />
+      <point x="38.71794871794873" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.objectadapter.VoltageAdapter" target="com.vectorx.pattern.t5_adapter.objectadapter.Voltage220V" relationship="DEPENDENCY">
+      <point x="0.0" y="52.0" />
+      <point x="328.5" y="260.0" />
+      <point x="460.5" y="260.0" />
+      <point x="72.28205128205133" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.objectadapter.Client" target="com.vectorx.pattern.t5_adapter.objectadapter.Phone" relationship="CREATE">
+      <point x="-79.00000000000003" y="0.0" />
+      <point x="97.0" y="326.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.objectadapter.Client" target="com.vectorx.pattern.t5_adapter.objectadapter.Voltage220V" relationship="CREATE">
+      <point x="0.0" y="-40.0" />
+      <point x="328.5" y="260.0" />
+      <point x="460.5" y="260.0" />
+      <point x="72.28205128205133" y="40.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="239.5" y="183.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

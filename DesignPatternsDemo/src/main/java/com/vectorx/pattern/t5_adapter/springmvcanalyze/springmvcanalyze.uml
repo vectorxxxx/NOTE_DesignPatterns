@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t5_adapter.springmvcanalyze</OriginalElement>
+  <nodes>
+    <node x="854.002232142857" y="91.5">com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.SimpleController</node>
+    <node x="267.33593749999994" y="0.0">com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.Controller</node>
+    <node x="735.6110491071429" y="211.0">com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.SimpleHandlerAdapter</node>
+    <node x="149.64508928571414" y="362.0">com.vectorx.pattern.t5_adapter.springmvcanalyze.servlet.DispatchServlet</node>
+    <node x="41.502232142857" y="80.0">com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.HandlerAdapter</node>
+    <node x="543.252232142857" y="91.5">com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.HttpController</node>
+    <node x="514.6110491071429" y="211.0">com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.HttpHandlerAdapter</node>
+    <node x="252.61104910714292" y="211.0">com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.AnnotationHandlerAdapter</node>
+    <node x="212.14508928571414" y="515.0">com.vectorx.pattern.t5_adapter.springmvcanalyze.Client</node>
+    <node x="262.502232142857" y="91.5">com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.AnnotationController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.HttpHandlerAdapter" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.HttpController" relationship="DEPENDENCY">
+      <point x="50.25" y="-39.5" />
+      <point x="665.3610491071429" y="180.0" />
+      <point x="631.252232142857" y="180.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.servlet.DispatchServlet" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.SimpleHandlerAdapter" relationship="CREATE">
+      <point x="80.85714285714286" y="-51.5" />
+      <point x="372.002232142857" y="331.0" />
+      <point x="841.6110491071429" y="331.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.HttpHandlerAdapter" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.HandlerAdapter" relationship="REALIZATION">
+      <point x="-50.25" y="-39.5" />
+      <point x="564.8610491071429" y="190.0" />
+      <point x="610.1110491071429" y="190.0" />
+      <point x="610.1110491071429" y="180.0" />
+      <point x="209.00223214285703" y="180.0" />
+      <point x="67.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.Client" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.servlet.DispatchServlet" relationship="CREATE">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.SimpleController" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.Controller" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="951.002232142857" y="60.0" />
+      <point x="627.9609375" y="60.0" />
+      <point x="627.9609375" y="50.0" />
+      <point x="358.08593749999994" y="50.0" />
+      <point x="30.25" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.servlet.DispatchServlet" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.HttpHandlerAdapter" relationship="CREATE">
+      <point x="40.428571428571445" y="-51.5" />
+      <point x="331.57366071428555" y="321.0" />
+      <point x="615.1110491071429" y="321.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.AnnotationHandlerAdapter" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.HandlerAdapter" relationship="REALIZATION">
+      <point x="60.5" y="-39.5" />
+      <point x="434.1110491071429" y="190.0" />
+      <point x="610.1110491071429" y="190.0" />
+      <point x="610.1110491071429" y="180.0" />
+      <point x="209.00223214285703" y="180.0" />
+      <point x="67.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.AnnotationHandlerAdapter" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.AnnotationController" relationship="DEPENDENCY">
+      <point x="-60.5" y="-39.5" />
+      <point x="313.1110491071429" y="190.0" />
+      <point x="369.502232142857" y="190.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.servlet.DispatchServlet" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.HandlerAdapter" relationship="DEPENDENCY">
+      <point x="-40.42857142857139" y="-51.5" />
+      <point x="250.71651785714275" y="321.0" />
+      <point x="57.61104910714289" y="321.0" />
+      <point x="57.61104910714289" y="190.0" />
+      <point x="142.002232142857" y="190.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.servlet.DispatchServlet" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.AnnotationHandlerAdapter" relationship="CREATE">
+      <point x="2.8421709430404007E-14" y="-51.5" />
+      <point x="291.14508928571416" y="311.0" />
+      <point x="373.6110491071429" y="311.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.SimpleHandlerAdapter" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.HandlerAdapter" relationship="REALIZATION">
+      <point x="-53.0" y="-39.5" />
+      <point x="788.6110491071429" y="190.0" />
+      <point x="610.1110491071429" y="190.0" />
+      <point x="610.1110491071429" y="180.0" />
+      <point x="209.00223214285703" y="180.0" />
+      <point x="67.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.servlet.DispatchServlet" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.SimpleController" relationship="CREATE">
+      <point x="121.28571428571428" y="-51.5" />
+      <point x="412.43080357142844" y="341.0" />
+      <point x="1014.502232142857" y="341.0" />
+      <point x="1014.502232142857" y="190.0" />
+      <point x="951.002232142857" y="190.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.servlet.DispatchServlet" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.Controller" relationship="DEPENDENCY">
+      <point x="-121.28571428571422" y="-51.5" />
+      <point x="169.85937499999991" y="341.0" />
+      <point x="0.0" y="341.0" />
+      <point x="0.0" y="60.0" />
+      <point x="297.58593749999994" y="60.0" />
+      <point x="-30.25" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.servlet.DispatchServlet" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.HandlerAdapter" relationship="TO_MANY">
+      <point x="-80.8571428571428" y="-51.5" />
+      <point x="210.28794642857133" y="331.0" />
+      <point x="37.960937499999886" y="331.0" />
+      <point x="37.960937499999886" y="180.0" />
+      <point x="75.002232142857" y="180.0" />
+      <point x="-67.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.AnnotationController" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.Controller" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="369.502232142857" y="60.0" />
+      <point x="627.9609375" y="60.0" />
+      <point x="627.9609375" y="50.0" />
+      <point x="358.08593749999994" y="50.0" />
+      <point x="30.25" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.HttpController" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.Controller" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="631.252232142857" y="60.0" />
+      <point x="627.9609375" y="60.0" />
+      <point x="627.9609375" y="50.0" />
+      <point x="358.08593749999994" y="50.0" />
+      <point x="30.25" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t5_adapter.springmvcanalyze.adapter.SimpleHandlerAdapter" target="com.vectorx.pattern.t5_adapter.springmvcanalyze.controller.SimpleController" relationship="DEPENDENCY">
+      <point x="53.0" y="-39.5" />
+      <point x="894.6110491071429" y="190.0" />
+      <point x="951.002232142857" y="190.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="524.5" y="285.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
