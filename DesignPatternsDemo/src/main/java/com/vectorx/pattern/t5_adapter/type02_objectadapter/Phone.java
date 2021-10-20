@@ -1,4 +1,4 @@
-package com.vectorx.pattern.t5_adapter.objectadapter;
+package com.vectorx.pattern.t5_adapter.type02_objectadapter;
 
 public class Phone {
     public void charing(IVoltage5V iVoltage5V) {

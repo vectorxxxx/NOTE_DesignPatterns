@@ -1,4 +1,4 @@
-package com.vectorx.pattern.t5_adapter.objectadapter;
+package com.vectorx.pattern.t5_adapter.type02_objectadapter;
 
 public class VoltageAdapter implements IVoltage5V {
     private Voltage220V voltage220V;

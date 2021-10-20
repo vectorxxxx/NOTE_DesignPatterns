@@ -1,4 +1,4 @@
-package com.vectorx.pattern.t5_adapter.classadapter;
+package com.vectorx.pattern.t5_adapter.type01_classadapter;
 
 public class VoltageAdapter extends Voltage220V implements IVoltage5V {
     @Override

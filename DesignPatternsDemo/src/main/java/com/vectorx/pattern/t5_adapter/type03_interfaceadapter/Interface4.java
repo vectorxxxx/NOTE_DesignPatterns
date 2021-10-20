@@ -1,4 +1,4 @@
-package com.vectorx.pattern.t5_adapter.interfaceadapter;
+package com.vectorx.pattern.t5_adapter.type03_interfaceadapter;
 
 public interface Interface4 {
     void operation1();

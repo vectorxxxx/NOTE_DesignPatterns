@@ -1,4 +1,4 @@
-package com.vectorx.pattern.t5_adapter.interfaceadapter;
+package com.vectorx.pattern.t5_adapter.type03_interfaceadapter;
 
 public abstract class AbsAdapter implements Interface4 {
     @Override

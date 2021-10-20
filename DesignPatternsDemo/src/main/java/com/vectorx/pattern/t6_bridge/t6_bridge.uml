@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t6_bridge</OriginalElement>
+  <nodes>
+    <node x="512.25" y="330.0">com.vectorx.pattern.t6_bridge.abstraction.SlidePhone</node>
+    <node x="661.25" y="330.0">com.vectorx.pattern.t6_bridge.abstraction.UprightPhone</node>
+    <node x="137.0" y="164.0">com.vectorx.pattern.t6_bridge.implementor.Xiaomi</node>
+    <node x="597.3623737373738" y="0.0">com.vectorx.pattern.t6_bridge.implementor.Branch</node>
+    <node x="0.0" y="164.0">com.vectorx.pattern.t6_bridge.implementor.iPhone</node>
+    <node x="764.7297979797979" y="152.0">com.vectorx.pattern.t6_bridge.abstraction.Phone</node>
+    <node x="274.0" y="164.0">com.vectorx.pattern.t6_bridge.implementor.Huawei</node>
+    <node x="371.25" y="330.0">com.vectorx.pattern.t6_bridge.abstraction.FlipPhone</node>
+    <node x="315.2297979797979" y="494.0">com.vectorx.pattern.t6_bridge.client.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t6_bridge.client.Client" target="com.vectorx.pattern.t6_bridge.implementor.iPhone" relationship="CREATE">
+      <point x="-79.0" y="0.0" />
+      <point x="58.5" y="522.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.implementor.Xiaomi" target="com.vectorx.pattern.t6_bridge.implementor.Branch" relationship="REALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="195.5" y="133.0" />
+      <point x="670.862" y="133.0" />
+      <point x="14.99962626262618" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.abstraction.FlipPhone" target="com.vectorx.pattern.t6_bridge.implementor.Branch" relationship="DEPENDENCY">
+      <point x="0.0" y="-51.0" />
+      <point x="431.75" y="304.0" />
+      <point x="655.862" y="304.0" />
+      <point x="-3.7373737382040417E-4" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.abstraction.Phone" target="com.vectorx.pattern.t6_bridge.implementor.Branch" relationship="DEPENDENCY">
+      <point x="2.020202020958095E-4" y="63.0" />
+      <point x="830.73" y="304.0" />
+      <point x="655.862" y="304.0" />
+      <point x="-3.7373737382040417E-4" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.client.Client" target="com.vectorx.pattern.t6_bridge.abstraction.Phone" relationship="DEPENDENCY">
+      <point x="79.0" y="0.0" />
+      <point x="845.73" y="522.0" />
+      <point x="15.000202020202096" y="63.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.implementor.Huawei" target="com.vectorx.pattern.t6_bridge.implementor.Branch" relationship="REALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="332.5" y="133.0" />
+      <point x="670.862" y="133.0" />
+      <point x="14.99962626262618" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.client.Client" target="com.vectorx.pattern.t6_bridge.abstraction.FlipPhone" relationship="CREATE">
+      <point x="37.52020202020208" y="-28.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.client.Client" target="com.vectorx.pattern.t6_bridge.implementor.Huawei" relationship="CREATE">
+      <point x="-61.72979797979792" y="-28.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.abstraction.UprightPhone" target="com.vectorx.pattern.t6_bridge.abstraction.Phone" relationship="GENERALIZATION">
+      <point x="-15.0" y="-51.0" />
+      <point x="720.75" y="285.0" />
+      <point x="670.862" y="285.0" />
+      <point x="670.862" y="215.0" />
+      <point x="-65.9997979797979" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.abstraction.SlidePhone" target="com.vectorx.pattern.t6_bridge.abstraction.Phone" relationship="GENERALIZATION">
+      <point x="-31.75" y="-51.0" />
+      <point x="545.0" y="285.0" />
+      <point x="670.862" y="285.0" />
+      <point x="670.862" y="215.0" />
+      <point x="-65.9997979797979" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.abstraction.FlipPhone" target="com.vectorx.pattern.t6_bridge.abstraction.Phone" relationship="GENERALIZATION">
+      <point x="-15.0" y="-51.0" />
+      <point x="416.75" y="285.0" />
+      <point x="670.862" y="285.0" />
+      <point x="670.862" y="215.0" />
+      <point x="-65.9997979797979" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.client.Client" target="com.vectorx.pattern.t6_bridge.abstraction.UprightPhone" relationship="CREATE">
+      <point x="79.0" y="-15.0" />
+      <point x="735.75" y="507.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.abstraction.UprightPhone" target="com.vectorx.pattern.t6_bridge.implementor.Branch" relationship="DEPENDENCY">
+      <point x="0.0" y="-51.0" />
+      <point x="735.75" y="304.0" />
+      <point x="655.862" y="304.0" />
+      <point x="-3.7373737382040417E-4" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.implementor.iPhone" target="com.vectorx.pattern.t6_bridge.implementor.Branch" relationship="REALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="58.5" y="133.0" />
+      <point x="670.862" y="133.0" />
+      <point x="14.99962626262618" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.abstraction.SlidePhone" target="com.vectorx.pattern.t6_bridge.implementor.Branch" relationship="DEPENDENCY">
+      <point x="0.0" y="-51.0" />
+      <point x="576.75" y="304.0" />
+      <point x="655.862" y="304.0" />
+      <point x="-3.7373737382040417E-4" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.client.Client" target="com.vectorx.pattern.t6_bridge.implementor.Xiaomi" relationship="CREATE">
+      <point x="-79.0" y="-15.0" />
+      <point x="195.5" y="507.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t6_bridge.abstraction.Phone" target="com.vectorx.pattern.t6_bridge.implementor.Branch" relationship="TO_ONE">
+      <point x="0.0" y="-63.0" />
+      <point x="830.7297979797979" y="51.0" />
+      <point x="58.5" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.75" showDependencies="true" x="448.5" y="316.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

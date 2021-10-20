@@ -1,4 +1,4 @@
-package com.vectorx.pattern.t5_adapter.classadapter;
+package com.vectorx.pattern.t5_adapter.type02_objectadapter;
 
 public class Voltage220V {
     public Integer output220V() {
