@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t7_decorator</OriginalElement>
+  <nodes>
+    <node x="87.19975490196077" y="305.0">com.vectorx.pattern.t7_decorator.concreatedecorator.Chocolate</node>
+    <node x="573.1997549019608" y="305.0">com.vectorx.pattern.t7_decorator.concretecomponent.Espresso</node>
+    <node x="228.19975490196077" y="305.0">com.vectorx.pattern.t7_decorator.concreatedecorator.Soy</node>
+    <node x="283.2071078431372" y="0.0">com.vectorx.pattern.t7_decorator.component.Drink</node>
+    <node x="538.4497549019608" y="185.0">com.vectorx.pattern.t7_decorator.concretecomponent.Coffee</node>
+    <node x="705.1997549019608" y="305.0">com.vectorx.pattern.t7_decorator.concretecomponent.LongBlack</node>
+    <node x="428.1997549019608" y="305.0">com.vectorx.pattern.t7_decorator.concretecomponent.ShortBlack</node>
+    <node x="421.174019607843" y="387.0">com.vectorx.pattern.t7_decorator.client.CoffeeBar</node>
+    <node x="325.1997549019608" y="305.0">com.vectorx.pattern.t7_decorator.concreatedecorator.Milk</node>
+    <node x="0.0" y="173.0">com.vectorx.pattern.t7_decorator.decorator.Decorator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t7_decorator.client.CoffeeBar" target="com.vectorx.pattern.t7_decorator.concreatedecorator.Chocolate" relationship="CREATE">
+      <point x="-59.24999999999994" y="-28.0" />
+      <point x="440.9240196078431" y="366.0" />
+      <point x="147.69975490196077" y="366.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concreatedecorator.Milk" target="com.vectorx.pattern.t7_decorator.decorator.Decorator" relationship="GENERALIZATION">
+      <point x="-20.75" y="-15.0" />
+      <point x="345.9497549019608" y="284.0" />
+      <point x="260.62377450980387" y="284.0" />
+      <point x="260.62377450980387" y="274.0" />
+      <point x="60.5" y="274.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.client.CoffeeBar" target="com.vectorx.pattern.t7_decorator.concreatedecorator.Milk" relationship="CREATE">
+      <point x="-19.749999999999943" y="-28.0" />
+      <point x="480.4240196078431" y="356.0" />
+      <point x="366.6997549019608" y="356.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concreatedecorator.Milk" target="com.vectorx.pattern.t7_decorator.component.Drink" relationship="DEPENDENCY">
+      <point x="20.75" y="-15.0" />
+      <point x="387.4497549019608" y="143.0" />
+      <point x="535.3247549019608" y="143.0" />
+      <point x="535.3247549019608" y="133.0" />
+      <point x="379.87377450980387" y="133.0" />
+      <point x="38.666666666666686" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concretecomponent.LongBlack" target="com.vectorx.pattern.t7_decorator.concretecomponent.Coffee" relationship="GENERALIZATION">
+      <point x="-30.75" y="-15.0" />
+      <point x="735.9497549019608" y="284.0" />
+      <point x="595.4497549019608" y="284.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concreatedecorator.Soy" target="com.vectorx.pattern.t7_decorator.component.Drink" relationship="DEPENDENCY">
+      <point x="19.25" y="-15.0" />
+      <point x="285.9497549019608" y="274.0" />
+      <point x="274.1740196078431" y="274.0" />
+      <point x="274.1740196078431" y="143.0" />
+      <point x="535.3247549019608" y="143.0" />
+      <point x="535.3247549019608" y="133.0" />
+      <point x="379.87377450980387" y="133.0" />
+      <point x="38.666666666666686" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.client.CoffeeBar" target="com.vectorx.pattern.t7_decorator.concretecomponent.Espresso" relationship="CREATE">
+      <point x="19.750000000000057" y="-28.0" />
+      <point x="519.9240196078431" y="356.0" />
+      <point x="629.1997549019608" y="356.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.decorator.Decorator" target="com.vectorx.pattern.t7_decorator.component.Drink" relationship="GENERALIZATION">
+      <point x="30.25" y="-40.0" />
+      <point x="90.75" y="153.0" />
+      <point x="288.375" y="153.0" />
+      <point x="288.375" y="123.0" />
+      <point x="341.2071078431372" y="123.0" />
+      <point x="0.0" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.client.CoffeeBar" target="com.vectorx.pattern.t7_decorator.component.Drink" relationship="DEPENDENCY">
+      <point x="59.25000000000006" y="-28.0" />
+      <point x="559.4240196078431" y="366.0" />
+      <point x="838.6997549019608" y="366.0" />
+      <point x="838.6997549019608" y="143.0" />
+      <point x="535.3247549019608" y="143.0" />
+      <point x="535.3247549019608" y="133.0" />
+      <point x="379.87377450980387" y="133.0" />
+      <point x="38.666666666666686" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.decorator.Decorator" target="com.vectorx.pattern.t7_decorator.component.Drink" relationship="TO_ONE">
+      <point x="-30.25" y="-40.0" />
+      <point x="30.25" y="133.0" />
+      <point x="302.5404411764705" y="133.0" />
+      <point x="-38.666666666666686" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concretecomponent.Espresso" target="com.vectorx.pattern.t7_decorator.concretecomponent.Coffee" relationship="GENERALIZATION">
+      <point x="-28.0" y="-15.0" />
+      <point x="601.1997549019608" y="284.0" />
+      <point x="595.4497549019608" y="284.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concreatedecorator.Soy" target="com.vectorx.pattern.t7_decorator.decorator.Decorator" relationship="GENERALIZATION">
+      <point x="-19.25" y="-15.0" />
+      <point x="247.44975490196077" y="284.0" />
+      <point x="260.62377450980387" y="284.0" />
+      <point x="260.62377450980387" y="274.0" />
+      <point x="60.5" y="274.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concretecomponent.Espresso" target="com.vectorx.pattern.t7_decorator.component.Drink" relationship="DEPENDENCY">
+      <point x="28.0" y="-15.0" />
+      <point x="657.1997549019608" y="274.0" />
+      <point x="662.9497549019608" y="274.0" />
+      <point x="662.9497549019608" y="143.0" />
+      <point x="535.3247549019608" y="143.0" />
+      <point x="535.3247549019608" y="133.0" />
+      <point x="379.87377450980387" y="133.0" />
+      <point x="38.666666666666686" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concretecomponent.Coffee" target="com.vectorx.pattern.t7_decorator.component.Drink" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="595.4497549019608" y="153.0" />
+      <point x="288.375" y="153.0" />
+      <point x="288.375" y="123.0" />
+      <point x="341.2071078431372" y="123.0" />
+      <point x="0.0" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concretecomponent.LongBlack" target="com.vectorx.pattern.t7_decorator.component.Drink" relationship="DEPENDENCY">
+      <point x="30.75" y="-15.0" />
+      <point x="797.4497549019608" y="143.0" />
+      <point x="535.3247549019608" y="143.0" />
+      <point x="535.3247549019608" y="133.0" />
+      <point x="379.87377450980387" y="133.0" />
+      <point x="38.666666666666686" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concreatedecorator.Chocolate" target="com.vectorx.pattern.t7_decorator.component.Drink" relationship="DEPENDENCY">
+      <point x="-30.25" y="-15.0" />
+      <point x="117.44975490196077" y="284.0" />
+      <point x="131.5" y="284.0" />
+      <point x="131.5" y="143.0" />
+      <point x="535.3247549019608" y="143.0" />
+      <point x="535.3247549019608" y="133.0" />
+      <point x="379.87377450980387" y="133.0" />
+      <point x="38.666666666666686" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concreatedecorator.Chocolate" target="com.vectorx.pattern.t7_decorator.decorator.Decorator" relationship="GENERALIZATION">
+      <point x="30.25" y="-15.0" />
+      <point x="177.94975490196077" y="284.0" />
+      <point x="260.62377450980387" y="284.0" />
+      <point x="260.62377450980387" y="274.0" />
+      <point x="60.5" y="274.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concretecomponent.ShortBlack" target="com.vectorx.pattern.t7_decorator.concretecomponent.Coffee" relationship="GENERALIZATION">
+      <point x="31.25" y="-15.0" />
+      <point x="521.9497549019608" y="284.0" />
+      <point x="595.4497549019608" y="284.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t7_decorator.concretecomponent.ShortBlack" target="com.vectorx.pattern.t7_decorator.component.Drink" relationship="DEPENDENCY">
+      <point x="-31.25" y="-15.0" />
+      <point x="459.4497549019608" y="143.0" />
+      <point x="535.3247549019608" y="143.0" />
+      <point x="535.3247549019608" y="133.0" />
+      <point x="379.87377450980387" y="133.0" />
+      <point x="38.666666666666686" y="51.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="428.0" y="254.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
