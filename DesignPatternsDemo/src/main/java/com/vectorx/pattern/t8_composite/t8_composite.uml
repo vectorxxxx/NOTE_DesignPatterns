@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t8_composite</OriginalElement>
+  <nodes>
+    <node x="10.5" y="221.0">com.vectorx.pattern.t8_composite.Major</node>
+    <node x="561.5" y="186.0">com.vectorx.pattern.t8_composite.College</node>
+    <node x="148.2115384615385" y="364.0">com.vectorx.pattern.t8_composite.Client</node>
+    <node x="106.25000000000003" y="0.0">com.vectorx.pattern.t8_composite.OrganizationComponent</node>
+    <node x="144.50000000000003" y="186.0">com.vectorx.pattern.t8_composite.University</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t8_composite.Client" target="com.vectorx.pattern.t8_composite.Major" relationship="CREATE">
+      <point x="-19.75" y="-28.0" />
+      <point x="207.4615384615385" y="333.0" />
+      <point x="67.5" y="333.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t8_composite.University" target="com.vectorx.pattern.t8_composite.OrganizationComponent" relationship="GENERALIZATION">
+      <point x="-99.25" y="-63.0" />
+      <point x="243.75000000000003" y="166.0" />
+      <point x="213.44871794871798" y="166.0" />
+      <point x="213.44871794871798" y="156.0" />
+      <point x="243.75000000000003" y="156.0" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t8_composite.Client" target="com.vectorx.pattern.t8_composite.OrganizationComponent" relationship="DEPENDENCY">
+      <point x="-59.25" y="-28.0" />
+      <point x="167.9615384615385" y="343.0" />
+      <point x="0.0" y="343.0" />
+      <point x="0.0" y="156.0" />
+      <point x="152.08333333333337" y="156.0" />
+      <point x="-91.66666666666666" y="63.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t8_composite.University" target="com.vectorx.pattern.t8_composite.OrganizationComponent" relationship="TO_MANY">
+      <point x="99.25" y="-63.0" />
+      <point x="442.25" y="156.0" />
+      <point x="828.948717948718" y="156.0" />
+      <point x="828.948717948718" y="146.0" />
+      <point x="335.41666666666674" y="146.0" />
+      <point x="91.66666666666671" y="63.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t8_composite.Client" target="com.vectorx.pattern.t8_composite.University" relationship="CREATE">
+      <point x="19.75" y="-28.0" />
+      <point x="246.9615384615385" y="333.0" />
+      <point x="343.0" y="333.0" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t8_composite.Major" target="com.vectorx.pattern.t8_composite.OrganizationComponent" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="67.5" y="166.0" />
+      <point x="213.44871794871798" y="166.0" />
+      <point x="213.44871794871798" y="156.0" />
+      <point x="243.75000000000003" y="156.0" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t8_composite.College" target="com.vectorx.pattern.t8_composite.OrganizationComponent" relationship="GENERALIZATION">
+      <point x="-99.25" y="-63.0" />
+      <point x="660.75" y="166.0" />
+      <point x="213.44871794871798" y="166.0" />
+      <point x="213.44871794871798" y="156.0" />
+      <point x="243.75000000000003" y="156.0" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t8_composite.Client" target="com.vectorx.pattern.t8_composite.College" relationship="CREATE">
+      <point x="59.25" y="-28.0" />
+      <point x="286.4615384615385" y="343.0" />
+      <point x="760.0" y="343.0" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t8_composite.College" target="com.vectorx.pattern.t8_composite.OrganizationComponent" relationship="TO_MANY">
+      <point x="99.25" y="-63.0" />
+      <point x="859.25" y="156.0" />
+      <point x="828.948717948718" y="156.0" />
+      <point x="828.948717948718" y="146.0" />
+      <point x="335.41666666666674" y="146.0" />
+      <point x="91.66666666666671" y="63.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="479.5" y="210.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
