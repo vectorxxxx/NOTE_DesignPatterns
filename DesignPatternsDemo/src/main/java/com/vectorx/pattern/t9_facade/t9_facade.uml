@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t9_facade</OriginalElement>
+  <nodes>
+    <node x="0.0" y="11.5">com.vectorx.pattern.t9_facade.Projector</node>
+    <node x="416.37499999999994" y="286.0">com.vectorx.pattern.t9_facade.HomeTheaterFacade</node>
+    <node x="182.99999999999994" y="23.0">com.vectorx.pattern.t9_facade.Popcorn</node>
+    <node x="355.99999999999994" y="23.0">com.vectorx.pattern.t9_facade.Stereo</node>
+    <node x="516.0" y="0.0">com.vectorx.pattern.t9_facade.DVDPlayer</node>
+    <node x="697.0" y="11.5">com.vectorx.pattern.t9_facade.TheaterLights</node>
+    <node x="897.0" y="34.5">com.vectorx.pattern.t9_facade.Screen</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t9_facade.HomeTheaterFacade" target="com.vectorx.pattern.t9_facade.DVDPlayer" relationship="TO_ONE">
+      <point x="9.625" y="-132.0" />
+      <point x="-73.0" y="98.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t9_facade.HomeTheaterFacade" target="com.vectorx.pattern.t9_facade.TheaterLights" relationship="TO_ONE">
+      <point x="97.5" y="0.0" />
+      <point x="787.0" y="418.0" />
+      <point x="0.0" y="86.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t9_facade.HomeTheaterFacade" target="com.vectorx.pattern.t9_facade.Stereo" relationship="TO_ONE">
+      <point x="-87.87500000000006" y="-132.0" />
+      <point x="0.0" y="75.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t9_facade.HomeTheaterFacade" target="com.vectorx.pattern.t9_facade.Popcorn" relationship="DEPENDENCY">
+      <point x="-97.50000000000006" y="-15.0" />
+      <point x="259.49999999999994" y="403.0" />
+      <point x="0.0" y="75.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t9_facade.HomeTheaterFacade" target="com.vectorx.pattern.t9_facade.Screen" relationship="TO_ONE">
+      <point x="97.5" y="30.0" />
+      <point x="967.5" y="448.0" />
+      <point x="0.0" y="63.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t9_facade.HomeTheaterFacade" target="com.vectorx.pattern.t9_facade.TheaterLights" relationship="DEPENDENCY">
+      <point x="97.5" y="15.0" />
+      <point x="802.0" y="433.0" />
+      <point x="15.0" y="86.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t9_facade.HomeTheaterFacade" target="com.vectorx.pattern.t9_facade.Projector" relationship="DEPENDENCY">
+      <point x="-97.50000000000006" y="0.0" />
+      <point x="81.5" y="418.0" />
+      <point x="0.0" y="86.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t9_facade.HomeTheaterFacade" target="com.vectorx.pattern.t9_facade.Screen" relationship="DEPENDENCY">
+      <point x="97.5" y="45.0" />
+      <point x="982.5" y="463.0" />
+      <point x="15.0" y="63.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t9_facade.HomeTheaterFacade" target="com.vectorx.pattern.t9_facade.Projector" relationship="TO_ONE">
+      <point x="-97.50000000000006" y="15.0" />
+      <point x="66.5" y="433.0" />
+      <point x="-15.0" y="86.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t9_facade.HomeTheaterFacade" target="com.vectorx.pattern.t9_facade.Stereo" relationship="DEPENDENCY">
+      <point x="-72.87500000000006" y="-132.0" />
+      <point x="15.0" y="75.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t9_facade.HomeTheaterFacade" target="com.vectorx.pattern.t9_facade.Popcorn" relationship="TO_ONE">
+      <point x="-97.50000000000006" y="-30.0" />
+      <point x="274.49999999999994" y="388.0" />
+      <point x="15.0" y="75.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t9_facade.HomeTheaterFacade" target="com.vectorx.pattern.t9_facade.DVDPlayer" relationship="DEPENDENCY">
+      <point x="82.625" y="-132.0" />
+      <point x="0.0" y="98.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9508771929824561" showDependencies="true" x="519.0" y="301.29151291512915" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -52,10 +52,265 @@ ClientTest{
 
 **原理类图**
 
-![外观模式原理类图](https://i.loli.net/2021/10/26/5mQ8CBLoRUy7MZp.png)
+![外观模式原理类图](https://i.loli.net/2021/10/27/uFrRGDghApwx9iC.png)
 
 **原理类图的说明（外观模式的角色）**
 
 - 1）外观类（Facade）：为调用端提供统一的调用接口，外观类知道哪些子系统负责处理请求，从而将调用端的请求代理给适当子系统对象
 - 2）调用者（Client）：外观接口的调用者
 - 3）子系统的集合：指模块或者子系统，处理 Facade 对象指派的任务，是功能的实际提供者
+
+
+
+## 3、外观模式解决影院管理
+
+- 1）外观模式可以理解为转换一群接口，客户只要调用一个接口，而不用调用多个接口才能达到目的，比如：
+  - 在 PC 上安装软件的时候经常有一键安装选项（省去选择安装目录、安装的组件等等）
+  - 手机的重启功能（把关机和启动合为一个操作）
+- 2）外观模式就是解决多个复杂接口带来的使用困难，起到简化用户操作的作用
+
+![image-20211027210310018](https://i.loli.net/2021/10/27/q8lHi1rwvszZjpW.png)
+
+**使用外观模式来完成家庭影院项目**
+
+![未命名文件 (2)](https://i.loli.net/2021/10/27/wRaZKJqL6vCsI5y.png)
+
+**UML 类图**
+
+![image-20211027224917586](https://i.loli.net/2021/10/27/si6uGzN74XrT25U.png)
+
+**核心代码**
+
+【投影仪】
+
+```java
+public class Projector {
+    private static Projector projector = new Projector();
+
+    public static Projector getInstance() {
+        return projector;
+    }
+
+    public void on() {
+        System.out.println("打开投影仪...");
+    }
+
+    public void off() {
+        System.out.println("关闭投影仪...");
+    }
+
+    public void focus() {
+        System.out.println("投影仪聚焦...");
+    }
+
+    public void zoom() {
+        System.out.println("投影仪放大...");
+    }
+}
+```
+
+【DVD 播放器】
+
+```java
+public class DVDPlayer {
+    private static DVDPlayer player = new DVDPlayer();
+
+    public static DVDPlayer getInstance() {
+        return player;
+    }
+
+    public void on() {
+        System.out.println("打开DVD播放器...");
+    }
+
+    public void off() {
+        System.out.println("关闭DVD播放器...");
+    }
+
+    public void play() {
+        System.out.println("播放DVD播放器...");
+    }
+
+    public void pause() {
+        System.out.println("暂停DVD播放器...");
+    }
+
+    public void setDvd(String dvd) {
+        System.out.println("选dvd：" + dvd + "...");
+    }
+}
+```
+
+【荧幕】
+
+```java
+public class Screen {
+    private static Screen screen = new Screen();
+
+    public static Screen getInstance() {
+        return screen;
+    }
+
+    public void up() {
+        System.out.println("升起荧幕...");
+    }
+
+    public void down() {
+        System.out.println("拉下荧幕...");
+    }
+}
+```
+
+【立体声】
+
+```java
+public class Stereo {
+    private static Stereo stereo = new Stereo();
+
+    public static Stereo getInstance() {
+        return stereo;
+    }
+
+    public void on() {
+        System.out.println("打开立体声...");
+    }
+
+    public void off() {
+        System.out.println("关闭立体声...");
+    }
+
+    public void setVolume(Integer volume) {
+        System.out.println("立体声音量+" + volume + "...");
+    }
+}
+```
+
+【灯光】
+
+```java
+public class TheaterLights {
+    private static TheaterLights lights = new TheaterLights();
+
+    public static TheaterLights getInstance() {
+        return lights;
+    }
+
+    public void on() {
+        System.out.println("打开灯光...");
+    }
+
+    public void off() {
+        System.out.println("关闭灯光...");
+    }
+
+    public void dim() {
+        System.out.println("调暗灯光...");
+    }
+
+    public void bright() {
+        System.out.println("调亮灯光...");
+    }
+}
+```
+
+【爆米花机器】
+
+```java
+public class Popcorn {
+    private static Popcorn popcorn = new Popcorn();
+
+    public static Popcorn getInstance() {
+        return popcorn;
+    }
+
+    public void on() {
+        System.out.println("打开爆米花机器...");
+    }
+
+    public void off() {
+        System.out.println("关闭爆米花机器...");
+    }
+
+    public void pop() {
+        System.out.println("取出爆米花...");
+    }
+}
+```
+
+【家庭影院 Facade】
+
+```java
+public class HomeTheaterFacade {
+    private Popcorn popcorn;
+    private Screen screen;
+    private Stereo stereo;
+    private TheaterLights lights;
+    private Projector projector;
+    private DVDPlayer player;
+
+    public HomeTheaterFacade() {
+        this.popcorn = Popcorn.getInstance();
+        this.screen = Screen.getInstance();
+        this.stereo = Stereo.getInstance();
+        this.lights = TheaterLights.getInstance();
+        this.projector = Projector.getInstance();
+        this.player = DVDPlayer.getInstance();
+    }
+
+    public void ready() {
+        lights.on(); // 打开灯光
+        popcorn.on(); // 开爆米花机
+        screen.down(); // 放下屏幕
+        projector.on(); // 开投影仪
+        projector.focus();
+        projector.zoom();
+        stereo.on(); // 开音响，设置音量
+        stereo.setVolume(8);
+        player.on(); // 开DVD，选dvd
+        player.setDvd("坦塔尼克号");
+        popcorn.pop(); // 去拿爆米花，关闭机器
+        popcorn.off();
+        lights.dim(); // 调暗灯光
+    }
+
+    public void play() {
+        player.play();
+    }
+
+    public void pause() {
+        player.pause();
+    }
+
+    public void end() {
+        player.off();
+        projector.off();
+        stereo.off();
+        lights.bright();
+        screen.up();
+    }
+}
+```
+
+【客户端】
+
+```java
+public class Client {
+    public static void main(String[] args) throws InterruptedException {
+        HomeTheaterFacade homeTheaterFacade = new HomeTheaterFacade();
+        System.out.println("===========家庭影院初始化============");
+        homeTheaterFacade.ready();
+        System.out.println("===========家庭影院沉浸式播放============");
+        homeTheaterFacade.play();
+        Thread.sleep(1000);
+        System.out.println("===========家庭影院暂停============");
+        homeTheaterFacade.pause();
+        Thread.sleep(1000);
+        System.out.println("===========家庭影院沉浸式播放============");
+        homeTheaterFacade.play();
+        Thread.sleep(1000);
+        System.out.println("===========家庭影院结束============");
+        homeTheaterFacade.end();
+    }
+}
+```
+

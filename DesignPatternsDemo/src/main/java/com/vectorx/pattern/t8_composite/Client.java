@@ -1,7 +1,5 @@
 package com.vectorx.pattern.t8_composite;
 
-import java.util.HashMap;
-
 public class Client {
     public static void main(String[] args) {
         //大学
@@ -26,6 +24,5 @@ public class Client {
         //=============信息工程学院=============
         //通信工程
         //信息工程
-        HashMap
     }
 }
