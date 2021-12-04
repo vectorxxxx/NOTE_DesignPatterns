@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t10_flyweight</OriginalElement>
+  <nodes>
+    <node x="35.5" y="106.0">com.vectorx.pattern.t10_flyweight.Website</node>
+    <node x="235.94736842105263" y="106.0">com.vectorx.pattern.t10_flyweight.Type</node>
+    <node x="23.279605263157862" y="0.0">com.vectorx.pattern.t10_flyweight.User</node>
+    <node x="97.94736842105263" y="280.0">com.vectorx.pattern.t10_flyweight.WebsiteFactory</node>
+    <node x="92.94736842105263" y="198.0">com.vectorx.pattern.t10_flyweight.ConcreteWebsite</node>
+    <node x="71.07236842105263" y="388.0">com.vectorx.pattern.t10_flyweight.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t10_flyweight.Client" target="com.vectorx.pattern.t10_flyweight.Type" relationship="DEPENDENCY">
+      <point x="34.5" y="-15.0" />
+      <point x="151.57236842105263" y="367.0" />
+      <point x="293.5756578947368" y="367.0" />
+      <point x="293.5756578947368" y="177.0" />
+      <point x="284.4473684210526" y="177.0" />
+      <point x="284.4473684210526" y="167.0" />
+      <point x="300.4473684210526" y="167.0" />
+      <point x="21.5" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.WebsiteFactory" target="com.vectorx.pattern.t10_flyweight.ConcreteWebsite" relationship="CREATE">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.ConcreteWebsite" target="com.vectorx.pattern.t10_flyweight.Website" relationship="GENERALIZATION">
+      <point x="-63.75" y="-15.0" />
+      <point x="114.19736842105263" y="177.0" />
+      <point x="125.49999999999997" y="177.0" />
+      <point x="35.99999999999997" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.Client" target="com.vectorx.pattern.t10_flyweight.Website" relationship="DEPENDENCY">
+      <point x="-11.5" y="-15.0" />
+      <point x="105.57236842105263" y="357.0" />
+      <point x="62.47697368421052" y="357.0" />
+      <point x="62.47697368421052" y="167.0" />
+      <point x="53.5" y="167.0" />
+      <point x="-36.0" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.Client" target="com.vectorx.pattern.t10_flyweight.WebsiteFactory" relationship="DEPENDENCY">
+      <point x="11.5" y="-15.0" />
+      <point x="128.57236842105263" y="357.0" />
+      <point x="177.94736842105263" y="357.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.ConcreteWebsite" target="com.vectorx.pattern.t10_flyweight.Type" relationship="TO_ONE">
+      <point x="21.25" y="-15.0" />
+      <point x="199.19736842105263" y="167.0" />
+      <point x="273.4473684210526" y="167.0" />
+      <point x="273.4473684210526" y="157.0" />
+      <point x="257.4473684210526" y="157.0" />
+      <point x="-21.5" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.ConcreteWebsite" target="com.vectorx.pattern.t10_flyweight.Type" relationship="DEPENDENCY">
+      <point x="63.75" y="-15.0" />
+      <point x="241.69736842105263" y="177.0" />
+      <point x="284.4473684210526" y="177.0" />
+      <point x="284.4473684210526" y="167.0" />
+      <point x="300.4473684210526" y="167.0" />
+      <point x="21.5" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.WebsiteFactory" target="com.vectorx.pattern.t10_flyweight.Website" relationship="DEPENDENCY">
+      <point x="-64.0" y="-28.0" />
+      <point x="113.94736842105263" y="259.0" />
+      <point x="63.82236842105263" y="259.0" />
+      <point x="63.82236842105263" y="177.0" />
+      <point x="62.47697368421052" y="177.0" />
+      <point x="62.47697368421052" y="167.0" />
+      <point x="53.5" y="167.0" />
+      <point x="-36.0" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.Client" target="com.vectorx.pattern.t10_flyweight.User" relationship="CREATE">
+      <point x="-34.5" y="-15.0" />
+      <point x="82.57236842105263" y="367.0" />
+      <point x="25.0" y="367.0" />
+      <point x="25.0" y="81.0" />
+      <point x="83.27960526315786" y="81.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.WebsiteFactory" target="com.vectorx.pattern.t10_flyweight.Website" relationship="TO_MANY">
+      <point x="-32.0" y="-28.0" />
+      <point x="145.94736842105263" y="249.0" />
+      <point x="74.82236842105263" y="249.0" />
+      <point x="74.82236842105263" y="177.0" />
+      <point x="89.5" y="177.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.WebsiteFactory" target="com.vectorx.pattern.t10_flyweight.Type" relationship="TO_MANY">
+      <point x="32.00000000000001" y="-28.0" />
+      <point x="209.94736842105263" y="249.0" />
+      <point x="273.4473684210526" y="249.0" />
+      <point x="273.4473684210526" y="157.0" />
+      <point x="257.4473684210526" y="157.0" />
+      <point x="-21.5" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.ConcreteWebsite" target="com.vectorx.pattern.t10_flyweight.User" relationship="DEPENDENCY">
+      <point x="-21.25" y="-15.0" />
+      <point x="156.69736842105263" y="177.0" />
+      <point x="154.0" y="177.0" />
+      <point x="154.0" y="81.0" />
+      <point x="83.27960526315786" y="81.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.WebsiteFactory" target="com.vectorx.pattern.t10_flyweight.Type" relationship="DEPENDENCY">
+      <point x="64.0" y="-28.0" />
+      <point x="241.94736842105263" y="259.0" />
+      <point x="284.4473684210526" y="259.0" />
+      <point x="284.4473684210526" y="167.0" />
+      <point x="300.4473684210526" y="167.0" />
+      <point x="21.5" y="15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t10_flyweight.Website" target="com.vectorx.pattern.t10_flyweight.User" relationship="DEPENDENCY">
+      <point x="-2.8421709430404007E-14" y="-15.0" />
+      <point x="89.49999999999997" y="81.0" />
+      <point x="83.27960526315786" y="81.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="161.0" y="209.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

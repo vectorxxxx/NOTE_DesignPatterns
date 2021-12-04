@@ -1,5 +1,6 @@
 package com.vectorx.pattern.t9_facade;
 
+
 public class Client {
     public static void main(String[] args) throws InterruptedException {
         HomeTheaterFacade homeTheaterFacade = new HomeTheaterFacade();
