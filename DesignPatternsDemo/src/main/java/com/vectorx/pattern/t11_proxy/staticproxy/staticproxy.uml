@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t11_proxy.staticproxy</OriginalElement>
+  <nodes>
+    <node x="0.0" y="106.0">com.vectorx.pattern.t11_proxy.staticproxy.TeacherDaoProxy</node>
+    <node x="139.25" y="260.0">com.vectorx.pattern.t11_proxy.staticproxy.Client</node>
+    <node x="253.0" y="118.0">com.vectorx.pattern.t11_proxy.staticproxy.TeacherDao</node>
+    <node x="121.125" y="0.0">com.vectorx.pattern.t11_proxy.staticproxy.IteacherDao</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t11_proxy.staticproxy.TeacherDao" target="com.vectorx.pattern.t11_proxy.staticproxy.IteacherDao" relationship="REALIZATION">
+      <point x="0.0" y="-40.0" />
+      <point x="320.0" y="76.0" />
+      <point x="223.125" y="76.0" />
+      <point x="34.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t11_proxy.staticproxy.TeacherDaoProxy" target="com.vectorx.pattern.t11_proxy.staticproxy.IteacherDao" relationship="REALIZATION">
+      <point x="58.25" y="-52.0" />
+      <point x="174.75" y="86.0" />
+      <point x="320.0" y="86.0" />
+      <point x="320.0" y="76.0" />
+      <point x="223.125" y="76.0" />
+      <point x="34.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t11_proxy.staticproxy.Client" target="com.vectorx.pattern.t11_proxy.staticproxy.TeacherDao" relationship="CREATE">
+      <point x="39.5" y="-40.0" />
+      <point x="257.75" y="235.0" />
+      <point x="320.0" y="235.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t11_proxy.staticproxy.TeacherDaoProxy" target="com.vectorx.pattern.t11_proxy.staticproxy.IteacherDao" relationship="TO_ONE">
+      <point x="-58.25" y="-52.0" />
+      <point x="58.25" y="86.0" />
+      <point x="155.125" y="86.0" />
+      <point x="-34.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t11_proxy.staticproxy.Client" target="com.vectorx.pattern.t11_proxy.staticproxy.TeacherDaoProxy" relationship="CREATE">
+      <point x="-39.5" y="-40.0" />
+      <point x="178.75" y="235.0" />
+      <point x="116.5" y="235.0" />
+      <point x="0.0" y="52.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="193.5" y="170.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
