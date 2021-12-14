@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t12_template</OriginalElement>
+  <nodes>
+    <node x="65.1875" y="0.0">com.vectorx.pattern.t12_template.SoyaMilk</node>
+    <node x="113.16666666666669" y="354.0">com.vectorx.pattern.t12_template.Client</node>
+    <node x="206.5" y="222.0">com.vectorx.pattern.t12_template.SesameSoyaMilk</node>
+    <node x="401.5" y="222.0">com.vectorx.pattern.t12_template.PeanutSoyaMilk</node>
+    <node x="10.5" y="222.0">com.vectorx.pattern.t12_template.RedBeanSoyaMilk</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t12_template.SesameSoyaMilk" target="com.vectorx.pattern.t12_template.SoyaMilk" relationship="GENERALIZATION">
+      <point x="0.0" y="-40.0" />
+      <point x="294.0" y="197.0" />
+      <point x="152.688" y="197.0" />
+      <point x="4.999999999881766E-4" y="86.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t12_template.Client" target="com.vectorx.pattern.t12_template.SesameSoyaMilk" relationship="CREATE">
+      <point x="21.833333333333314" y="-40.0" />
+      <point x="-80.0" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t12_template.Client" target="com.vectorx.pattern.t12_template.SoyaMilk" relationship="DEPENDENCY">
+      <point x="-79.0" y="0.0" />
+      <point x="-7.0" y="394.0" />
+      <point x="-7.0" y="86.0" />
+      <point x="-87.5" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t12_template.PeanutSoyaMilk" target="com.vectorx.pattern.t12_template.SoyaMilk" relationship="GENERALIZATION">
+      <point x="0.0" y="-40.0" />
+      <point x="489.0" y="197.0" />
+      <point x="152.688" y="197.0" />
+      <point x="4.999999999881766E-4" y="86.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t12_template.Client" target="com.vectorx.pattern.t12_template.RedBeanSoyaMilk" relationship="CREATE">
+      <point x="-13.166666666666686" y="-40.0" />
+      <point x="80.5" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t12_template.RedBeanSoyaMilk" target="com.vectorx.pattern.t12_template.SoyaMilk" relationship="GENERALIZATION">
+      <point x="0.0" y="-40.0" />
+      <point x="98.5" y="197.0" />
+      <point x="152.688" y="197.0" />
+      <point x="4.999999999881766E-4" y="86.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t12_template.Client" target="com.vectorx.pattern.t12_template.PeanutSoyaMilk" relationship="CREATE">
+      <point x="79.0" y="0.0" />
+      <point x="489.0" y="394.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9493392070484582" showDependencies="true" x="288.5" y="324.4431554524362" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -15,57 +15,57 @@
     </properties>
 
     <dependencies>
-        <!--<dependency>-->
-        <!--    <groupId>junit</groupId>-->
-        <!--    <artifactId>junit</artifactId>-->
-        <!--    <version>RELEASE</version>-->
-        <!--    <scope>compile</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--    <groupId>org.springframework</groupId>-->
-        <!--    <artifactId>spring-core</artifactId>-->
-        <!--    <version>${org.springframework.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--    <groupId>org.springframework</groupId>-->
-        <!--    <artifactId>spring-beans</artifactId>-->
-        <!--    <version>${org.springframework.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--    <groupId>org.springframework</groupId>-->
-        <!--    <artifactId>spring-context</artifactId>-->
-        <!--    <version>${org.springframework.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--    <groupId>org.springframework</groupId>-->
-        <!--    <artifactId>spring-web</artifactId>-->
-        <!--    <version>${org.springframework.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--    <groupId>org.springframework</groupId>-->
-        <!--    <artifactId>spring-webmvc</artifactId>-->
-        <!--    <version>${org.springframework.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--    <groupId>mysql</groupId>-->
-        <!--    <artifactId>mysql-connector-java</artifactId>-->
-        <!--    <version>8.0.26</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--    <groupId>com.oracle.ojdbc</groupId>-->
-        <!--    <artifactId>ojdbc8</artifactId>-->
-        <!--    <version>19.3.0.0</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--    <groupId>com.microsoft.sqlserver</groupId>-->
-        <!--    <artifactId>mssql-jdbc</artifactId>-->
-        <!--    <version>9.4.0.jre8</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--    <groupId>org.mybatis</groupId>-->
-        <!--    <artifactId>mybatis</artifactId>-->
-        <!--    <version>3.4.6</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.26</version>
+        </dependency>
+        <dependency>
+            <groupId>com.oracle.ojdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>19.3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>9.4.0.jre8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.6</version>
+        </dependency>
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
