@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t14_visitor</OriginalElement>
+  <nodes>
+    <node x="35.5" y="549.0">com.vectorx.pattern.t14_visitor.Success</node>
+    <node x="490.5833333333333" y="118.0">com.vectorx.pattern.t14_visitor.Man</node>
+    <node x="287.5" y="549.0">com.vectorx.pattern.t14_visitor.Fail</node>
+    <node x="540.5" y="549.0">com.vectorx.pattern.t14_visitor.Wait</node>
+    <node x="532.7030651340997" y="238.0">com.vectorx.pattern.t14_visitor.Action</node>
+    <node x="390.0775862068966" y="690.0">com.vectorx.pattern.t14_visitor.Client</node>
+    <node x="826.4913793103449" y="371.0">com.vectorx.pattern.t14_visitor.ObjectStructure</node>
+    <node x="641.4913793103449" y="406.0">com.vectorx.pattern.t14_visitor.Woman</node>
+    <node x="788.2413793103449" y="0.0">com.vectorx.pattern.t14_visitor.Person</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t14_visitor.Client" target="com.vectorx.pattern.t14_visitor.Man" relationship="CREATE">
+      <point x="-65.83333333333326" y="-28.0" />
+      <point x="403.24425287356337" y="669.0" />
+      <point x="25.0" y="669.0" />
+      <point x="25.0" y="216.0" />
+      <point x="233.33333333333337" y="216.0" />
+      <point x="233.33333333333337" y="206.0" />
+      <point x="531.5833333333333" y="206.0" />
+      <point x="-41.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Action" target="com.vectorx.pattern.t14_visitor.Man" relationship="DEPENDENCY">
+      <point x="-58.0" y="-39.5" />
+      <point x="590.7030651340997" y="216.0" />
+      <point x="233.33333333333337" y="216.0" />
+      <point x="233.33333333333337" y="206.0" />
+      <point x="531.5833333333333" y="206.0" />
+      <point x="-41.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Man" target="com.vectorx.pattern.t14_visitor.Action" relationship="DEPENDENCY">
+      <point x="41.0" y="28.0" />
+      <point x="613.5833333333333" y="196.0" />
+      <point x="837.4913793103449" y="196.0" />
+      <point x="837.4913793103449" y="206.0" />
+      <point x="706.7030651340997" y="206.0" />
+      <point x="58.0" y="-39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.ObjectStructure" target="com.vectorx.pattern.t14_visitor.Person" relationship="TO_MANY">
+      <point x="63.66666666666663" y="-63.0" />
+      <point x="985.6580459770115" y="349.0" />
+      <point x="932.9913793103449" y="349.0" />
+      <point x="932.9913793103449" y="97.0" />
+      <point x="931.7413793103449" y="97.0" />
+      <point x="61.5" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Wait" target="com.vectorx.pattern.t14_visitor.Man" relationship="DEPENDENCY">
+      <point x="77.33333333333326" y="-39.5" />
+      <point x="733.8333333333333" y="528.0" />
+      <point x="815.9913793103449" y="528.0" />
+      <point x="815.9913793103449" y="216.0" />
+      <point x="233.33333333333337" y="216.0" />
+      <point x="233.33333333333337" y="206.0" />
+      <point x="531.5833333333333" y="206.0" />
+      <point x="-41.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Wait" target="com.vectorx.pattern.t14_visitor.Woman" relationship="DEPENDENCY">
+      <point x="-77.33333333333326" y="-39.5" />
+      <point x="579.1666666666667" y="528.0" />
+      <point x="530.0" y="528.0" />
+      <point x="530.0" y="518.0" />
+      <point x="723.4913793103449" y="518.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Fail" target="com.vectorx.pattern.t14_visitor.Action" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="403.5" y="518.0" />
+      <point x="391.036398467433" y="518.0" />
+      <point x="391.036398467433" y="349.0" />
+      <point x="370.33333333333337" y="349.0" />
+      <point x="370.33333333333337" y="339.0" />
+      <point x="571.3697318007663" y="339.0" />
+      <point x="-77.33333333333331" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Success" target="com.vectorx.pattern.t14_visitor.Woman" relationship="DEPENDENCY">
+      <point x="77.33333333333337" y="-39.5" />
+      <point x="228.83333333333337" y="528.0" />
+      <point x="530.0" y="528.0" />
+      <point x="530.0" y="518.0" />
+      <point x="723.4913793103449" y="518.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Action" target="com.vectorx.pattern.t14_visitor.Woman" relationship="DEPENDENCY">
+      <point x="0.0" y="39.5" />
+      <point x="648.7030651340997" y="349.0" />
+      <point x="668.8247126436781" y="349.0" />
+      <point x="-54.666666666666686" y="-28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Woman" target="com.vectorx.pattern.t14_visitor.Action" relationship="DEPENDENCY">
+      <point x="0.0" y="-28.0" />
+      <point x="723.4913793103449" y="349.0" />
+      <point x="745.1197318007663" y="349.0" />
+      <point x="745.1197318007663" y="339.0" />
+      <point x="726.036398467433" y="339.0" />
+      <point x="77.33333333333331" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Fail" target="com.vectorx.pattern.t14_visitor.Man" relationship="DEPENDENCY">
+      <point x="-77.33333333333331" y="-39.5" />
+      <point x="326.1666666666667" y="518.0" />
+      <point x="128.036398467433" y="518.0" />
+      <point x="128.036398467433" y="216.0" />
+      <point x="233.33333333333337" y="216.0" />
+      <point x="233.33333333333337" y="206.0" />
+      <point x="531.5833333333333" y="206.0" />
+      <point x="-41.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Client" target="com.vectorx.pattern.t14_visitor.Wait" relationship="CREATE">
+      <point x="39.5" y="-28.0" />
+      <point x="508.5775862068966" y="659.0" />
+      <point x="656.5" y="659.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Client" target="com.vectorx.pattern.t14_visitor.Woman" relationship="CREATE">
+      <point x="13.166666666666629" y="-28.0" />
+      <point x="482.24425287356325" y="649.0" />
+      <point x="530.0" y="649.0" />
+      <point x="530.0" y="518.0" />
+      <point x="723.4913793103449" y="518.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.ObjectStructure" target="com.vectorx.pattern.t14_visitor.Person" relationship="DEPENDENCY">
+      <point x="0.0" y="-63.0" />
+      <point x="921.9913793103449" y="77.0" />
+      <point x="890.7413793103449" y="77.0" />
+      <point x="20.5" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.ObjectStructure" target="com.vectorx.pattern.t14_visitor.Action" relationship="DEPENDENCY">
+      <point x="-63.66666666666663" y="-63.0" />
+      <point x="858.3247126436783" y="349.0" />
+      <point x="745.1197318007663" y="349.0" />
+      <point x="745.1197318007663" y="339.0" />
+      <point x="726.036398467433" y="339.0" />
+      <point x="77.33333333333331" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Client" target="com.vectorx.pattern.t14_visitor.Success" relationship="CREATE">
+      <point x="-39.5" y="-28.0" />
+      <point x="429.5775862068966" y="659.0" />
+      <point x="151.5" y="659.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Man" target="com.vectorx.pattern.t14_visitor.Person" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="572.5833333333334" y="97.0" />
+      <point x="618.8333333333333" y="97.0" />
+      <point x="618.8333333333333" y="87.0" />
+      <point x="808.7413793103449" y="87.0" />
+      <point x="-61.5" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Client" target="com.vectorx.pattern.t14_visitor.ObjectStructure" relationship="CREATE">
+      <point x="65.83333333333337" y="-28.0" />
+      <point x="534.91091954023" y="669.0" />
+      <point x="921.9913793103449" y="669.0" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Success" target="com.vectorx.pattern.t14_visitor.Action" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="151.5" y="528.0" />
+      <point x="179.3362068965518" y="528.0" />
+      <point x="179.3362068965518" y="349.0" />
+      <point x="370.33333333333337" y="349.0" />
+      <point x="370.33333333333337" y="339.0" />
+      <point x="571.3697318007663" y="339.0" />
+      <point x="-77.33333333333331" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Woman" target="com.vectorx.pattern.t14_visitor.Person" relationship="GENERALIZATION">
+      <point x="54.666666666666686" y="-28.0" />
+      <point x="778.1580459770115" y="339.0" />
+      <point x="885.536398467433" y="339.0" />
+      <point x="885.536398467433" y="97.0" />
+      <point x="618.8333333333333" y="97.0" />
+      <point x="618.8333333333333" y="87.0" />
+      <point x="808.7413793103449" y="87.0" />
+      <point x="-61.5" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Success" target="com.vectorx.pattern.t14_visitor.Man" relationship="DEPENDENCY">
+      <point x="-77.33333333333326" y="-39.5" />
+      <point x="74.16666666666674" y="528.0" />
+      <point x="85.07758620689663" y="528.0" />
+      <point x="85.07758620689663" y="216.0" />
+      <point x="233.33333333333337" y="216.0" />
+      <point x="233.33333333333337" y="206.0" />
+      <point x="531.5833333333333" y="206.0" />
+      <point x="-41.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Person" target="com.vectorx.pattern.t14_visitor.Action" relationship="DEPENDENCY">
+      <point x="-20.5" y="28.0" />
+      <point x="849.7413793103449" y="87.0" />
+      <point x="896.536398467433" y="87.0" />
+      <point x="896.536398467433" y="196.0" />
+      <point x="837.4913793103449" y="196.0" />
+      <point x="837.4913793103449" y="206.0" />
+      <point x="706.7030651340997" y="206.0" />
+      <point x="58.0" y="-39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Fail" target="com.vectorx.pattern.t14_visitor.Woman" relationship="DEPENDENCY">
+      <point x="77.33333333333337" y="-39.5" />
+      <point x="480.83333333333337" y="528.0" />
+      <point x="530.0" y="528.0" />
+      <point x="530.0" y="518.0" />
+      <point x="723.4913793103449" y="518.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Client" target="com.vectorx.pattern.t14_visitor.Fail" relationship="CREATE">
+      <point x="-13.166666666666629" y="-28.0" />
+      <point x="455.91091954023" y="649.0" />
+      <point x="403.5" y="649.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t14_visitor.Wait" target="com.vectorx.pattern.t14_visitor.Action" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="656.5" y="528.0" />
+      <point x="630.9913793103449" y="528.0" />
+      <point x="630.9913793103449" y="349.0" />
+      <point x="370.33333333333337" y="349.0" />
+      <point x="370.33333333333337" y="339.0" />
+      <point x="571.3697318007663" y="339.0" />
+      <point x="-77.33333333333331" y="39.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8182989690721649" showDependencies="true" x="509.0" y="378.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

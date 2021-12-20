@@ -29,7 +29,7 @@
 
 **原理类图**
 
-![image-20211217204517612](https://s2.loli.net/2021/12/17/7cvjqkWQHVACBpm.png)
+![image-20211217204517612](C:/Users/Archimedes/Pictures/Test/7cvjqkWQHVACBpm.png)
 
 **命令模式的角色及职责**
 
