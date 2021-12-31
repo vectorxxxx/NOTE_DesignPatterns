@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t15_iterator</OriginalElement>
+  <nodes>
+    <node x="435.7771739130435" y="140.0">com.vectorx.pattern.t15_iterator.ComputerCollegeIterator</node>
+    <node x="894.3315217391304" y="175.0">com.vectorx.pattern.t15_iterator.College</node>
+    <node x="954.2065217391304" y="386.0">com.vectorx.pattern.t15_iterator.OutPutImpl</node>
+    <node x="345.9211956521739" y="373.5">com.vectorx.pattern.t15_iterator.InfoCollege</node>
+    <node x="135.7771739130435" y="140.0">com.vectorx.pattern.t15_iterator.InfoCollegeIterator</node>
+    <node x="518.9375" y="0.0">com.vectorx.pattern.t15_iterator.Department</node>
+    <node x="644.1711956521739" y="362.0">com.vectorx.pattern.t15_iterator.ComputerCollege</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t15_iterator.InfoCollege" target="com.vectorx.pattern.t15_iterator.Department" relationship="TO_MANY">
+      <point x="-102.375" y="-64.0" />
+      <point x="380.0461956521739" y="341.0" />
+      <point x="0.0" y="341.0" />
+      <point x="0.0" y="120.0" />
+      <point x="254.39945652173913" y="120.0" />
+      <point x="254.39945652173913" y="100.0" />
+      <point x="560.4375" y="100.0" />
+      <point x="-41.5" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.InfoCollegeIterator" target="com.vectorx.pattern.t15_iterator.Department" relationship="TO_MANY">
+      <point x="-69.99999999999989" y="-75.0" />
+      <point x="205.7771739130436" y="120.0" />
+      <point x="254.39945652173913" y="120.0" />
+      <point x="254.39945652173913" y="100.0" />
+      <point x="560.4375" y="100.0" />
+      <point x="-41.5" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.InfoCollege" target="com.vectorx.pattern.t15_iterator.College" relationship="REALIZATION">
+      <point x="102.375" y="-64.0" />
+      <point x="584.7961956521739" y="341.0" />
+      <point x="974.5" y="341.0" />
+      <point x="974.5" y="331.0" />
+      <point x="962.5815217391304" y="331.0" />
+      <point x="-68.25" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.ComputerCollegeIterator" target="com.vectorx.pattern.t15_iterator.Department" relationship="TO_MANY">
+      <point x="-71.75" y="-75.0" />
+      <point x="507.5271739130435" y="120.0" />
+      <point x="254.39945652173913" y="120.0" />
+      <point x="254.39945652173913" y="100.0" />
+      <point x="560.4375" y="100.0" />
+      <point x="-41.5" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.OutPutImpl" target="com.vectorx.pattern.t15_iterator.Department" relationship="DEPENDENCY">
+      <point x="60.5" y="-51.5" />
+      <point x="1135.7065217391305" y="341.0" />
+      <point x="1177.8315217391305" y="341.0" />
+      <point x="1177.8315217391305" y="110.0" />
+      <point x="905.9375" y="110.0" />
+      <point x="905.9375" y="100.0" />
+      <point x="643.4375" y="100.0" />
+      <point x="41.5" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.ComputerCollege" target="com.vectorx.pattern.t15_iterator.Department" relationship="TO_MANY">
+      <point x="-102.375" y="-75.5" />
+      <point x="678.2961956521739" y="321.0" />
+      <point x="125.2771739130435" y="321.0" />
+      <point x="125.2771739130435" y="120.0" />
+      <point x="254.39945652173913" y="120.0" />
+      <point x="254.39945652173913" y="100.0" />
+      <point x="560.4375" y="100.0" />
+      <point x="-41.5" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.InfoCollege" target="com.vectorx.pattern.t15_iterator.Department" relationship="CREATE">
+      <point x="34.125" y="-64.0" />
+      <point x="516.5461956521739" y="331.0" />
+      <point x="733.2771739130435" y="331.0" />
+      <point x="733.2771739130435" y="110.0" />
+      <point x="905.9375" y="110.0" />
+      <point x="905.9375" y="100.0" />
+      <point x="643.4375" y="100.0" />
+      <point x="41.5" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.College" target="com.vectorx.pattern.t15_iterator.Department" relationship="DEPENDENCY">
+      <point x="0.0" y="-40.0" />
+      <point x="1030.8315217391305" y="110.0" />
+      <point x="905.9375" y="110.0" />
+      <point x="905.9375" y="100.0" />
+      <point x="643.4375" y="100.0" />
+      <point x="41.5" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.ComputerCollegeIterator" target="com.vectorx.pattern.t15_iterator.Department" relationship="DEPENDENCY">
+      <point x="71.75" y="-75.0" />
+      <point x="651.0271739130435" y="110.0" />
+      <point x="905.9375" y="110.0" />
+      <point x="905.9375" y="100.0" />
+      <point x="643.4375" y="100.0" />
+      <point x="41.5" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.InfoCollege" target="com.vectorx.pattern.t15_iterator.InfoCollegeIterator" relationship="CREATE">
+      <point x="-34.125" y="-64.0" />
+      <point x="448.2961956521739" y="331.0" />
+      <point x="275.7771739130435" y="331.0" />
+      <point x="0.0" y="75.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.ComputerCollege" target="com.vectorx.pattern.t15_iterator.Department" relationship="CREATE">
+      <point x="34.125" y="-75.5" />
+      <point x="814.7961956521739" y="331.0" />
+      <point x="878.8940217391304" y="331.0" />
+      <point x="878.8940217391304" y="110.0" />
+      <point x="905.9375" y="110.0" />
+      <point x="905.9375" y="100.0" />
+      <point x="643.4375" y="100.0" />
+      <point x="41.5" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.ComputerCollege" target="com.vectorx.pattern.t15_iterator.College" relationship="REALIZATION">
+      <point x="102.375" y="-75.5" />
+      <point x="883.0461956521739" y="341.0" />
+      <point x="974.5" y="341.0" />
+      <point x="974.5" y="331.0" />
+      <point x="962.5815217391304" y="331.0" />
+      <point x="-68.25" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.InfoCollegeIterator" target="com.vectorx.pattern.t15_iterator.Department" relationship="DEPENDENCY">
+      <point x="70.00000000000011" y="-75.0" />
+      <point x="345.7771739130436" y="110.0" />
+      <point x="905.9375" y="110.0" />
+      <point x="905.9375" y="100.0" />
+      <point x="643.4375" y="100.0" />
+      <point x="41.5" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.OutPutImpl" target="com.vectorx.pattern.t15_iterator.College" relationship="DEPENDENCY">
+      <point x="-60.5" y="-51.5" />
+      <point x="1014.7065217391304" y="341.0" />
+      <point x="1099.0815217391305" y="341.0" />
+      <point x="68.25" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t15_iterator.ComputerCollege" target="com.vectorx.pattern.t15_iterator.ComputerCollegeIterator" relationship="CREATE">
+      <point x="-34.125" y="-75.5" />
+      <point x="746.5461956521739" y="311.0" />
+      <point x="579.2771739130435" y="311.0" />
+      <point x="0.0" y="75.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="598.5" y="256.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
