@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t16_observer.observer</OriginalElement>
+  <nodes>
+    <node x="90.44999999999993" y="260.0">com.vectorx.pattern.t16_observer.observer.WeatherData</node>
+    <node x="765.0" y="117.5">com.vectorx.pattern.t16_observer.observer.BaiDuWebSite</node>
+    <node x="0.0" y="106.0">com.vectorx.pattern.t16_observer.observer.Subject</node>
+    <node x="147.0" y="0.0">com.vectorx.pattern.t16_observer.observer.Observer</node>
+    <node x="270.99999999999994" y="117.5">com.vectorx.pattern.t16_observer.observer.SinaWebSite</node>
+    <node x="518.0" y="117.5">com.vectorx.pattern.t16_observer.observer.CurrentConditions</node>
+    <node x="415.9333333333333" y="529.0">com.vectorx.pattern.t16_observer.observer.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t16_observer.observer.Client" target="com.vectorx.pattern.t16_observer.observer.SinaWebSite" relationship="CREATE">
+      <point x="-19.750000000000057" y="-28.0" />
+      <point x="475.1833333333332" y="498.0" />
+      <point x="384.49999999999994" y="498.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t16_observer.observer.Subject" target="com.vectorx.pattern.t16_observer.observer.Observer" relationship="DEPENDENCY">
+      <point x="0.0" y="-51.0" />
+      <point x="119.5" y="86.0" />
+      <point x="171.43333333333322" y="86.0" />
+      <point x="171.43333333333322" y="76.0" />
+      <point x="184.83333333333331" y="76.0" />
+      <point x="-75.66666666666669" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t16_observer.observer.Client" target="com.vectorx.pattern.t16_observer.observer.WeatherData" relationship="CREATE">
+      <point x="-59.25000000000006" y="-28.0" />
+      <point x="435.6833333333332" y="508.0" />
+      <point x="209.94999999999993" y="508.0" />
+      <point x="0.0" y="108.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t16_observer.observer.WeatherData" target="com.vectorx.pattern.t16_observer.observer.Observer" relationship="DEPENDENCY">
+      <point x="0.0" y="-108.5" />
+      <point x="209.94999999999993" y="234.0" />
+      <point x="249.5" y="234.0" />
+      <point x="249.5" y="86.0" />
+      <point x="171.43333333333322" y="86.0" />
+      <point x="171.43333333333322" y="76.0" />
+      <point x="184.83333333333331" y="76.0" />
+      <point x="-75.66666666666669" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t16_observer.observer.Client" target="com.vectorx.pattern.t16_observer.observer.CurrentConditions" relationship="CREATE">
+      <point x="19.749999999999943" y="-28.0" />
+      <point x="514.6833333333332" y="498.0" />
+      <point x="631.5" y="498.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t16_observer.observer.WeatherData" target="com.vectorx.pattern.t16_observer.observer.Subject" relationship="REALIZATION">
+      <point x="-79.66666666666669" y="-108.5" />
+      <point x="130.28333333333325" y="234.0" />
+      <point x="119.5" y="234.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t16_observer.observer.CurrentConditions" target="com.vectorx.pattern.t16_observer.observer.Observer" relationship="REALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="631.5" y="76.0" />
+      <point x="336.1666666666667" y="76.0" />
+      <point x="75.66666666666669" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t16_observer.observer.WeatherData" target="com.vectorx.pattern.t16_observer.observer.Observer" relationship="TO_MANY">
+      <point x="79.66666666666669" y="-108.5" />
+      <point x="289.6166666666666" y="234.0" />
+      <point x="260.5" y="234.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t16_observer.observer.BaiDuWebSite" target="com.vectorx.pattern.t16_observer.observer.Observer" relationship="REALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="878.5" y="86.0" />
+      <point x="631.5" y="86.0" />
+      <point x="631.5" y="76.0" />
+      <point x="336.1666666666667" y="76.0" />
+      <point x="75.66666666666669" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t16_observer.observer.Client" target="com.vectorx.pattern.t16_observer.observer.BaiDuWebSite" relationship="CREATE">
+      <point x="59.24999999999994" y="-28.0" />
+      <point x="554.1833333333332" y="508.0" />
+      <point x="878.5" y="508.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t16_observer.observer.SinaWebSite" target="com.vectorx.pattern.t16_observer.observer.Observer" relationship="REALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="384.49999999999994" y="86.0" />
+      <point x="631.5" y="86.0" />
+      <point x="631.5" y="76.0" />
+      <point x="336.1666666666667" y="76.0" />
+      <point x="75.66666666666669" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="479.5" y="288.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
