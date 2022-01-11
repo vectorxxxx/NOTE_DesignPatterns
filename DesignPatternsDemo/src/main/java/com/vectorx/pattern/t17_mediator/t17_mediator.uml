@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t17_mediator</OriginalElement>
+  <nodes>
+    <node x="414.25000000000006" y="309.5">com.vectorx.pattern.t17_mediator.Curtain</node>
+    <node x="454.15276432606936" y="636.0">com.vectorx.pattern.t17_mediator.Client</node>
+    <node x="21.5" y="144.0">com.vectorx.pattern.t17_mediator.Mediator</node>
+    <node x="243.25000000000006" y="309.5">com.vectorx.pattern.t17_mediator.Alarm</node>
+    <node x="596.25" y="298.0">com.vectorx.pattern.t17_mediator.TV</node>
+    <node x="64.10797013720747" y="0.0">com.vectorx.pattern.t17_mediator.Colleague</node>
+    <node x="22.992877320419723" y="472.0">com.vectorx.pattern.t17_mediator.ConcreteMediator</node>
+    <node x="828.25" y="309.5">com.vectorx.pattern.t17_mediator.CoffeeMachine</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t17_mediator.Client" target="com.vectorx.pattern.t17_mediator.Alarm" relationship="CREATE">
+      <point x="-39.5" y="-28.0" />
+      <point x="493.65276432606936" y="605.0" />
+      <point x="328.10797013720753" y="605.0" />
+      <point x="328.10797013720753" y="451.0" />
+      <point x="318.75000000000006" y="451.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.ConcreteMediator" target="com.vectorx.pattern.t17_mediator.Alarm" relationship="DEPENDENCY">
+      <point x="0.0" y="-51.0" />
+      <point x="147.49287732041972" y="451.0" />
+      <point x="318.75000000000006" y="451.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.Client" target="com.vectorx.pattern.t17_mediator.Mediator" relationship="DEPENDENCY">
+      <point x="13.166666666666629" y="-28.0" />
+      <point x="546.319430992736" y="595.0" />
+      <point x="585.7500000000001" y="595.0" />
+      <point x="585.7500000000001" y="267.0" />
+      <point x="208.24999999999997" y="267.0" />
+      <point x="62.25" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.ConcreteMediator" target="com.vectorx.pattern.t17_mediator.Colleague" relationship="TO_MANY">
+      <point x="-71.14285714285722" y="-51.0" />
+      <point x="76.3500201775625" y="441.0" />
+      <point x="11.0" y="441.0" />
+      <point x="11.0" y="112.0" />
+      <point x="118.7079701372075" y="112.0" />
+      <point x="-36.39999999999998" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.Client" target="com.vectorx.pattern.t17_mediator.ConcreteMediator" relationship="CREATE">
+      <point x="-65.83333333333331" y="-28.0" />
+      <point x="467.3194309927361" y="615.0" />
+      <point x="147.49287732041975" y="615.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.CoffeeMachine" target="com.vectorx.pattern.t17_mediator.Mediator" relationship="DEPENDENCY">
+      <point x="-45.25" y="-39.5" />
+      <point x="873.5" y="277.0" />
+      <point x="585.7500000000001" y="277.0" />
+      <point x="585.7500000000001" y="267.0" />
+      <point x="208.24999999999997" y="267.0" />
+      <point x="62.25" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.Curtain" target="com.vectorx.pattern.t17_mediator.Colleague" relationship="GENERALIZATION">
+      <point x="-40.25" y="-39.5" />
+      <point x="454.50000000000006" y="122.0" />
+      <point x="614.2329701372075" y="122.0" />
+      <point x="614.2329701372075" y="112.0" />
+      <point x="227.9079701372075" y="112.0" />
+      <point x="72.80000000000001" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.ConcreteMediator" target="com.vectorx.pattern.t17_mediator.Mediator" relationship="GENERALIZATION">
+      <point x="-35.57142857142861" y="-51.0" />
+      <point x="111.92144874899111" y="451.0" />
+      <point x="83.75" y="451.0" />
+      <point x="-62.25" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.ConcreteMediator" target="com.vectorx.pattern.t17_mediator.CoffeeMachine" relationship="DEPENDENCY">
+      <point x="106.71428571428572" y="-51.0" />
+      <point x="254.20716303470545" y="441.0" />
+      <point x="918.75" y="441.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.ConcreteMediator" target="com.vectorx.pattern.t17_mediator.Curtain" relationship="DEPENDENCY">
+      <point x="35.571428571428555" y="-51.0" />
+      <point x="183.06430589184828" y="421.0" />
+      <point x="494.75000000000006" y="421.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.Alarm" target="com.vectorx.pattern.t17_mediator.Colleague" relationship="GENERALIZATION">
+      <point x="-37.75" y="-39.5" />
+      <point x="281.00000000000006" y="122.0" />
+      <point x="614.2329701372075" y="122.0" />
+      <point x="614.2329701372075" y="112.0" />
+      <point x="227.9079701372075" y="112.0" />
+      <point x="72.80000000000001" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.Alarm" target="com.vectorx.pattern.t17_mediator.Mediator" relationship="DEPENDENCY">
+      <point x="37.75" y="-39.5" />
+      <point x="356.50000000000006" y="277.0" />
+      <point x="585.7500000000001" y="277.0" />
+      <point x="585.7500000000001" y="267.0" />
+      <point x="208.24999999999997" y="267.0" />
+      <point x="62.25" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.Client" target="com.vectorx.pattern.t17_mediator.TV" relationship="CREATE">
+      <point x="39.5" y="-28.0" />
+      <point x="572.6527643260694" y="605.0" />
+      <point x="702.25" y="605.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.Client" target="com.vectorx.pattern.t17_mediator.CoffeeMachine" relationship="CREATE">
+      <point x="65.83333333333337" y="-28.0" />
+      <point x="598.9860976594027" y="615.0" />
+      <point x="918.75" y="615.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.CoffeeMachine" target="com.vectorx.pattern.t17_mediator.Colleague" relationship="GENERALIZATION">
+      <point x="45.25" y="-39.5" />
+      <point x="964.0" y="122.0" />
+      <point x="614.2329701372075" y="122.0" />
+      <point x="614.2329701372075" y="112.0" />
+      <point x="227.9079701372075" y="112.0" />
+      <point x="72.80000000000001" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.Curtain" target="com.vectorx.pattern.t17_mediator.Mediator" relationship="DEPENDENCY">
+      <point x="40.25" y="-39.5" />
+      <point x="535.0" y="277.0" />
+      <point x="585.7500000000001" y="277.0" />
+      <point x="585.7500000000001" y="267.0" />
+      <point x="208.24999999999997" y="267.0" />
+      <point x="62.25" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.Client" target="com.vectorx.pattern.t17_mediator.Curtain" relationship="CREATE">
+      <point x="-13.166666666666629" y="-28.0" />
+      <point x="519.9860976594027" y="595.0" />
+      <point x="494.75000000000006" y="595.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.TV" target="com.vectorx.pattern.t17_mediator.Colleague" relationship="GENERALIZATION">
+      <point x="53.0" y="-51.0" />
+      <point x="755.25" y="122.0" />
+      <point x="614.2329701372075" y="122.0" />
+      <point x="614.2329701372075" y="112.0" />
+      <point x="227.9079701372075" y="112.0" />
+      <point x="72.80000000000001" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.Colleague" target="com.vectorx.pattern.t17_mediator.Mediator" relationship="DEPENDENCY">
+      <point x="36.400000000000034" y="40.0" />
+      <point x="191.5079701372075" y="122.0" />
+      <point x="229.0" y="122.0" />
+      <point x="83.0" y="-51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.Mediator" target="com.vectorx.pattern.t17_mediator.Colleague" relationship="DEPENDENCY">
+      <point x="-83.0" y="-51.0" />
+      <point x="63.0" y="122.0" />
+      <point x="15.875706214689046" y="122.0" />
+      <point x="15.875706214689046" y="102.0" />
+      <point x="82.30797013720746" y="102.0" />
+      <point x="-72.8" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.TV" target="com.vectorx.pattern.t17_mediator.Mediator" relationship="DEPENDENCY">
+      <point x="-53.0" y="-51.0" />
+      <point x="649.25" y="277.0" />
+      <point x="585.7500000000001" y="277.0" />
+      <point x="585.7500000000001" y="267.0" />
+      <point x="208.24999999999997" y="267.0" />
+      <point x="62.25" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.ConcreteMediator" target="com.vectorx.pattern.t17_mediator.Colleague" relationship="DEPENDENCY">
+      <point x="-106.71428571428578" y="-51.0" />
+      <point x="40.77859160613394" y="451.0" />
+      <point x="0.0" y="451.0" />
+      <point x="0.0" y="122.0" />
+      <point x="15.875706214689046" y="122.0" />
+      <point x="15.875706214689046" y="102.0" />
+      <point x="82.30797013720746" y="102.0" />
+      <point x="-72.8" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.ConcreteMediator" target="com.vectorx.pattern.t17_mediator.TV" relationship="DEPENDENCY">
+      <point x="71.14285714285711" y="-51.0" />
+      <point x="218.63573446327683" y="431.0" />
+      <point x="702.25" y="431.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t17_mediator.Colleague" target="com.vectorx.pattern.t17_mediator.Mediator" relationship="TO_ONE">
+      <point x="0.0" y="40.0" />
+      <point x="155.10797013720747" y="122.0" />
+      <point x="146.0" y="122.0" />
+      <point x="0.0" y="-51.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8918539325842697" showDependencies="true" x="501.0" y="346.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
