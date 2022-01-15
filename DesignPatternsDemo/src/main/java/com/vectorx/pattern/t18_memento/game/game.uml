@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t18_memento.game</OriginalElement>
+  <nodes>
+    <node x="170.25" y="513.0">com.vectorx.pattern.t18_memento.game.Client</node>
+    <node x="193.625" y="0.0">com.vectorx.pattern.t18_memento.game.Memento</node>
+    <node x="266.0" y="291.0">com.vectorx.pattern.t18_memento.game.Caretaker</node>
+    <node x="0.0" y="222.0">com.vectorx.pattern.t18_memento.game.GameRole</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t18_memento.game.Client" target="com.vectorx.pattern.t18_memento.game.Caretaker" relationship="CREATE">
+      <point x="24.25" y="-28.0" />
+      <point x="-102.0" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t18_memento.game.Client" target="com.vectorx.pattern.t18_memento.game.GameRole" relationship="CREATE">
+      <point x="-10.75" y="-28.0" />
+      <point x="115.5" y="120.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t18_memento.game.Caretaker" target="com.vectorx.pattern.t18_memento.game.Memento" relationship="DEPENDENCY">
+      <point x="0.0" y="-51.5" />
+      <point x="375.5" y="197.0" />
+      <point x="276.625" y="197.0" />
+      <point x="0.0" y="86.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t18_memento.game.GameRole" target="com.vectorx.pattern.t18_memento.game.Memento" relationship="CREATE">
+      <point x="0.0" y="-120.5" />
+      <point x="123.0" y="197.0" />
+      <point x="276.625" y="197.0" />
+      <point x="0.0" y="86.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t18_memento.game.Caretaker" target="com.vectorx.pattern.t18_memento.game.Memento" relationship="TO_ONE">
+      <point x="15.0" y="-51.5" />
+      <point x="390.5" y="86.0" />
+      <point x="83.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="242.5" y="284.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
