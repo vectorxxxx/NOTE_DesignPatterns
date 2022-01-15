@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t19_interpreter</OriginalElement>
+  <nodes>
+    <node x="569.0" y="369.0">com.vectorx.pattern.t19_interpreter.Calculator</node>
+    <node x="0.0" y="117.5">com.vectorx.pattern.t19_interpreter.VarExpression</node>
+    <node x="829.0" y="261.0">com.vectorx.pattern.t19_interpreter.AddExpression</node>
+    <node x="276.0" y="106.0">com.vectorx.pattern.t19_interpreter.SymbolExpression</node>
+    <node x="384.4310344827585" y="0.0">com.vectorx.pattern.t19_interpreter.Expression</node>
+    <node x="553.0" y="261.0">com.vectorx.pattern.t19_interpreter.SubExpression</node>
+    <node x="543.0" y="499.0">com.vectorx.pattern.t19_interpreter.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t19_interpreter.SymbolExpression" target="com.vectorx.pattern.t19_interpreter.Expression" relationship="TO_ONE">
+      <point x="64.0" y="-51.5" />
+      <point x="468.0" y="86.0" />
+      <point x="505.25" y="86.0" />
+      <point x="505.25" y="76.0" />
+      <point x="512.4310344827585" y="76.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t19_interpreter.Calculator" target="com.vectorx.pattern.t19_interpreter.VarExpression" relationship="CREATE">
+      <point x="-89.60000000000002" y="-40.0" />
+      <point x="591.4" y="348.0" />
+      <point x="128.0" y="348.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t19_interpreter.SymbolExpression" target="com.vectorx.pattern.t19_interpreter.Expression" relationship="GENERALIZATION">
+      <point x="-64.0" y="-51.5" />
+      <point x="340.0" y="86.0" />
+      <point x="241.1810344827585" y="86.0" />
+      <point x="241.1810344827585" y="76.0" />
+      <point x="427.0977011494252" y="76.0" />
+      <point x="-85.33333333333331" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t19_interpreter.AddExpression" target="com.vectorx.pattern.t19_interpreter.SymbolExpression" relationship="GENERALIZATION">
+      <point x="-64.0" y="-28.0" />
+      <point x="893.0" y="240.0" />
+      <point x="819.0" y="240.0" />
+      <point x="819.0" y="230.0" />
+      <point x="404.0" y="230.0" />
+      <point x="0.0" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t19_interpreter.Client" target="com.vectorx.pattern.t19_interpreter.Calculator" relationship="CREATE">
+      <point x="0.0" y="-51.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t19_interpreter.Calculator" target="com.vectorx.pattern.t19_interpreter.Expression" relationship="DEPENDENCY">
+      <point x="89.60000000000002" y="-40.0" />
+      <point x="770.6" y="348.0" />
+      <point x="1095.5" y="348.0" />
+      <point x="1095.5" y="86.0" />
+      <point x="969.4310344827585" y="86.0" />
+      <point x="969.4310344827585" y="76.0" />
+      <point x="597.7643678160919" y="76.0" />
+      <point x="85.33333333333337" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t19_interpreter.SubExpression" target="com.vectorx.pattern.t19_interpreter.SymbolExpression" relationship="GENERALIZATION">
+      <point x="64.0" y="-28.0" />
+      <point x="745.0" y="240.0" />
+      <point x="819.0" y="240.0" />
+      <point x="819.0" y="230.0" />
+      <point x="404.0" y="230.0" />
+      <point x="0.0" y="51.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t19_interpreter.Calculator" target="com.vectorx.pattern.t19_interpreter.AddExpression" relationship="CREATE">
+      <point x="44.799999999999955" y="-40.0" />
+      <point x="725.8" y="338.0" />
+      <point x="957.0" y="338.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t19_interpreter.VarExpression" target="com.vectorx.pattern.t19_interpreter.Expression" relationship="GENERALIZATION">
+      <point x="0.0" y="-40.0" />
+      <point x="128.0" y="86.0" />
+      <point x="241.1810344827585" y="86.0" />
+      <point x="241.1810344827585" y="76.0" />
+      <point x="427.0977011494252" y="76.0" />
+      <point x="-85.33333333333331" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t19_interpreter.SubExpression" target="com.vectorx.pattern.t19_interpreter.Expression" relationship="DEPENDENCY">
+      <point x="-64.0" y="-28.0" />
+      <point x="617.0" y="240.0" />
+      <point x="682.9310344827585" y="240.0" />
+      <point x="682.9310344827585" y="86.0" />
+      <point x="969.4310344827585" y="86.0" />
+      <point x="969.4310344827585" y="76.0" />
+      <point x="597.7643678160919" y="76.0" />
+      <point x="85.33333333333337" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t19_interpreter.AddExpression" target="com.vectorx.pattern.t19_interpreter.Expression" relationship="DEPENDENCY">
+      <point x="64.0" y="-28.0" />
+      <point x="1021.0" y="240.0" />
+      <point x="969.4310344827585" y="240.0" />
+      <point x="969.4310344827585" y="76.0" />
+      <point x="597.7643678160919" y="76.0" />
+      <point x="85.33333333333337" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t19_interpreter.Calculator" target="com.vectorx.pattern.t19_interpreter.SubExpression" relationship="CREATE">
+      <point x="0.0" y="-40.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t19_interpreter.Calculator" target="com.vectorx.pattern.t19_interpreter.Expression" relationship="TO_ONE">
+      <point x="-44.799999999999955" y="-40.0" />
+      <point x="636.2" y="338.0" />
+      <point x="542.5" y="338.0" />
+      <point x="542.5" y="86.0" />
+      <point x="505.25" y="86.0" />
+      <point x="505.25" y="76.0" />
+      <point x="512.4310344827585" y="76.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="548.0" y="300.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
