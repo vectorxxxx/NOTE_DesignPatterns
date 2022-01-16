@@ -244,3 +244,54 @@ public static Map<String, Integer> getValue(String expStr) throws IOException {
 //运算结果：a+b=30
 ```
 
+
+
+## 4、解释器模式在 Spring 框架中的源码分析
+
+`Spring`框架中`SpelExpressionParser`就使用到解释器模式
+
+**示例代码**
+
+```java
+SpelExpressionParser spelExpressionParser = new SpelExpressionParser();
+Expression expression = spelExpressionParser.parseExpression("10*(2+1)*1+66");
+int result = (Integer) expression.getValue();
+System.out.println(result);
+```
+
+**UML 类图**
+
+![image-20220116140019280](https://s2.loli.net/2022/01/16/s8PzwDoyWeaSGki.png)
+
+**角色及职责**
+
+- `Expression`表达式接口
+
+- 下面有不同表达式实现类，比如`SpelExpression`、`LiteralExpression`和`CompositeStringExpression`
+
+- 使用时，根据创建解释器对象的不同，返回不同的`Expression`对象
+
+  ```java
+  public Expression parseExpression(String expressionString, ParserContext context) throws ParseException {
+      if (context == null) {
+          context = NON_TEMPLATE_PARSER_CONTEXT;
+      }
+  
+      if (context.isTemplate()) {
+          return parseTemplate(expressionString, context);
+      }
+      else {
+          return doParseExpression(expressionString, context);
+      }
+  }
+  ```
+
+- 调用`parseExpression`方法得到`Expression`对象后，调用`getValue`解释执行表达式，得到最终结果
+
+
+
+## 5、解释器模式的注意事项和细节
+
+- 1）当有一个语言需要解释执行，可将该语言中的句子表示为一个抽象语法树，就可以考虑使用解释器模式，让程序具有良好的扩展性
+- 2）应用场景：编译器、运算表达式计算、正则表达式、机器人等
+- 3）使用解释器可能带来的问题：<mark>解释器模式会引起类膨胀、解释器模式采用递归调用方法，将会导致调试非常复杂、效率可能降低</mark>
