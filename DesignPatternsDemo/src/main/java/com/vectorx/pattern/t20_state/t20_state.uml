@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t20_state</OriginalElement>
+  <nodes>
+    <node x="151.76666666666677" y="338.0">com.vectorx.pattern.t20_state.RaffleActivity</node>
+    <node x="177.26666666666677" y="605.0">com.vectorx.pattern.t20_state.Client</node>
+    <node x="271.76666666666677" y="152.0">com.vectorx.pattern.t20_state.CanRaffleState</node>
+    <node x="61.766666666666765" y="152.0">com.vectorx.pattern.t20_state.DispenseOutState</node>
+    <node x="0.0" y="0.0">com.vectorx.pattern.t20_state.State</node>
+    <node x="481.7666666666667" y="152.0">com.vectorx.pattern.t20_state.DispenseState</node>
+    <node x="691.7666666666667" y="152.0">com.vectorx.pattern.t20_state.NoRaffleState</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t20_state.NoRaffleState" target="com.vectorx.pattern.t20_state.RaffleActivity" relationship="TO_ONE">
+      <point x="0.0" y="51.0" />
+      <point x="786.7666666666667" y="276.0" />
+      <point x="682.0166666666667" y="276.0" />
+      <point x="682.0166666666667" y="316.0" />
+      <point x="295.45416666666677" y="316.0" />
+      <point x="39.1875" y="-108.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.DispenseOutState" target="com.vectorx.pattern.t20_state.RaffleActivity" relationship="DEPENDENCY">
+      <point x="0.0" y="51.0" />
+      <point x="156.76666666666677" y="286.0" />
+      <point x="261.51666666666677" y="286.0" />
+      <point x="261.51666666666677" y="316.0" />
+      <point x="269.32916666666677" y="316.0" />
+      <point x="13.0625" y="-108.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.DispenseOutState" target="com.vectorx.pattern.t20_state.State" relationship="REALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="156.76666666666677" y="132.0" />
+      <point x="471.8880952380952" y="132.0" />
+      <point x="471.8880952380952" y="122.0" />
+      <point x="158.33333333333331" y="122.0" />
+      <point x="63.33333333333334" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.RaffleActivity" target="com.vectorx.pattern.t20_state.NoRaffleState" relationship="CREATE">
+      <point x="91.4375" y="-108.5" />
+      <point x="347.70416666666677" y="306.0" />
+      <point x="850.1000000000001" y="306.0" />
+      <point x="63.33333333333337" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.RaffleActivity" target="com.vectorx.pattern.t20_state.State" relationship="DEPENDENCY">
+      <point x="-65.3125" y="-108.5" />
+      <point x="190.95416666666677" y="306.0" />
+      <point x="51.266666666666765" y="306.0" />
+      <point x="51.266666666666765" y="132.0" />
+      <point x="95.0" y="132.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.RaffleActivity" target="com.vectorx.pattern.t20_state.DispenseState" relationship="CREATE">
+      <point x="65.3125" y="-108.5" />
+      <point x="321.57916666666677" y="296.0" />
+      <point x="640.1" y="296.0" />
+      <point x="63.33333333333334" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.CanRaffleState" target="com.vectorx.pattern.t20_state.State" relationship="REALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="366.76666666666677" y="132.0" />
+      <point x="471.8880952380952" y="132.0" />
+      <point x="471.8880952380952" y="122.0" />
+      <point x="158.33333333333331" y="122.0" />
+      <point x="63.33333333333334" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.CanRaffleState" target="com.vectorx.pattern.t20_state.RaffleActivity" relationship="TO_ONE">
+      <point x="63.33333333333337" y="51.0" />
+      <point x="430.10000000000014" y="276.0" />
+      <point x="682.0166666666667" y="276.0" />
+      <point x="682.0166666666667" y="316.0" />
+      <point x="295.45416666666677" y="316.0" />
+      <point x="39.1875" y="-108.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.DispenseState" target="com.vectorx.pattern.t20_state.State" relationship="REALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="576.7666666666667" y="132.0" />
+      <point x="471.8880952380952" y="132.0" />
+      <point x="471.8880952380952" y="122.0" />
+      <point x="158.33333333333331" y="122.0" />
+      <point x="63.33333333333334" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.DispenseOutState" target="com.vectorx.pattern.t20_state.RaffleActivity" relationship="TO_ONE">
+      <point x="63.33333333333337" y="51.0" />
+      <point x="220.10000000000014" y="276.0" />
+      <point x="682.0166666666667" y="276.0" />
+      <point x="682.0166666666667" y="316.0" />
+      <point x="295.45416666666677" y="316.0" />
+      <point x="39.1875" y="-108.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.RaffleActivity" target="com.vectorx.pattern.t20_state.CanRaffleState" relationship="CREATE">
+      <point x="-13.0625" y="-108.5" />
+      <point x="243.20416666666677" y="306.0" />
+      <point x="303.4333333333334" y="306.0" />
+      <point x="-63.333333333333314" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.Client" target="com.vectorx.pattern.t20_state.RaffleActivity" relationship="CREATE">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="108.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.RaffleActivity" target="com.vectorx.pattern.t20_state.State" relationship="TO_ONE">
+      <point x="-91.4375" y="-108.5" />
+      <point x="164.82916666666677" y="316.0" />
+      <point x="40.266666666666765" y="316.0" />
+      <point x="40.266666666666765" y="132.0" />
+      <point x="31.666666666666686" y="132.0" />
+      <point x="-63.333333333333336" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.NoRaffleState" target="com.vectorx.pattern.t20_state.RaffleActivity" relationship="DEPENDENCY">
+      <point x="-63.33333333333337" y="51.0" />
+      <point x="723.4333333333334" y="286.0" />
+      <point x="261.51666666666677" y="286.0" />
+      <point x="261.51666666666677" y="316.0" />
+      <point x="269.32916666666677" y="316.0" />
+      <point x="13.0625" y="-108.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.CanRaffleState" target="com.vectorx.pattern.t20_state.RaffleActivity" relationship="DEPENDENCY">
+      <point x="0.0" y="51.0" />
+      <point x="366.76666666666677" y="286.0" />
+      <point x="261.51666666666677" y="286.0" />
+      <point x="261.51666666666677" y="316.0" />
+      <point x="269.32916666666677" y="316.0" />
+      <point x="13.0625" y="-108.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.RaffleActivity" target="com.vectorx.pattern.t20_state.DispenseOutState" relationship="CREATE">
+      <point x="-39.1875" y="-108.5" />
+      <point x="217.07916666666677" y="296.0" />
+      <point x="93.4333333333334" y="296.0" />
+      <point x="-63.33333333333337" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.NoRaffleState" target="com.vectorx.pattern.t20_state.State" relationship="REALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="786.7666666666667" y="132.0" />
+      <point x="471.8880952380952" y="132.0" />
+      <point x="471.8880952380952" y="122.0" />
+      <point x="158.33333333333331" y="122.0" />
+      <point x="63.33333333333334" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.DispenseState" target="com.vectorx.pattern.t20_state.RaffleActivity" relationship="DEPENDENCY">
+      <point x="-63.33333333333334" y="51.0" />
+      <point x="513.4333333333334" y="286.0" />
+      <point x="261.51666666666677" y="286.0" />
+      <point x="261.51666666666677" y="316.0" />
+      <point x="269.32916666666677" y="316.0" />
+      <point x="13.0625" y="-108.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.DispenseState" target="com.vectorx.pattern.t20_state.RaffleActivity" relationship="TO_ONE">
+      <point x="0.0" y="51.0" />
+      <point x="576.7666666666667" y="276.0" />
+      <point x="682.0166666666667" y="276.0" />
+      <point x="682.0166666666667" y="316.0" />
+      <point x="295.45416666666677" y="316.0" />
+      <point x="39.1875" y="-108.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8432934926958832" showDependencies="true" x="509.5" y="366.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

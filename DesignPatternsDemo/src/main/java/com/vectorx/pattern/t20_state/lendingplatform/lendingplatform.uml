@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t20_state.lendingplatform</OriginalElement>
+  <nodes>
+    <node x="408.22282051281974" y="908.0">com.vectorx.pattern.t20_state.lendingplatform.PublishedState</node>
+    <node x="572.7863675213672" y="326.5">com.vectorx.pattern.t20_state.lendingplatform.StateEnum</node>
+    <node x="198.6317948717941" y="515.0">com.vectorx.pattern.t20_state.lendingplatform.FinishedState</node>
+    <node x="2.945341880341573" y="0.0">com.vectorx.pattern.t20_state.lendingplatform.State</node>
+    <node x="470.72282051281974" y="1062.0">com.vectorx.pattern.t20_state.lendingplatform.AuditedState</node>
+    <node x="303.375" y="1359.0">com.vectorx.pattern.t20_state.lendingplatform.Context</node>
+    <node x="344.97282051281974" y="754.0">com.vectorx.pattern.t20_state.lendingplatform.NotPaidState</node>
+    <node x="264.72282051281974" y="623.0">com.vectorx.pattern.t20_state.lendingplatform.PaidState</node>
+    <node x="21.5" y="269.0">com.vectorx.pattern.t20_state.lendingplatform.AbstractState</node>
+    <node x="554.8478205128197" y="1193.0">com.vectorx.pattern.t20_state.lendingplatform.GeneratedState</node>
+    <node x="345.375" y="1672.0">com.vectorx.pattern.t20_state.lendingplatform.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.AuditedState" target="com.vectorx.pattern.t20_state.lendingplatform.StateEnum" relationship="DEPENDENCY">
+      <point x="107.00017948718028" y="0.0" />
+      <point x="746.0" y="1101.5" />
+      <point x="746.0" y="594.5" />
+      <point x="556.0" y="594.5" />
+      <point x="556.0" y="366.0" />
+      <point x="-101.50036752136725" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.AbstractState" target="com.vectorx.pattern.t20_state.lendingplatform.Context" relationship="DEPENDENCY">
+      <point x="0.0" y="97.0" />
+      <point x="142.5" y="959.0" />
+      <point x="270.0" y="959.0" />
+      <point x="270.0" y="1490.5" />
+      <point x="-121.0" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.PublishedState" target="com.vectorx.pattern.t20_state.lendingplatform.FinishedState" relationship="CREATE">
+      <point x="-112.99982051281967" y="15.0" />
+      <point x="286.0" y="974.0" />
+      <point x="286.0" y="944.0" />
+      <point x="232.223" y="944.0" />
+      <point x="-61.9087948717941" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.GeneratedState" target="com.vectorx.pattern.t20_state.lendingplatform.StateEnum" relationship="DEPENDENCY">
+      <point x="1.79487180275828E-4" y="-51.0" />
+      <point x="675.848" y="1158.5" />
+      <point x="746.0" y="1158.5" />
+      <point x="746.0" y="594.5" />
+      <point x="556.0" y="594.5" />
+      <point x="556.0" y="366.0" />
+      <point x="-101.50036752136725" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.Context" target="com.vectorx.pattern.t20_state.lendingplatform.GeneratedState" relationship="CREATE">
+      <point x="121.0" y="-15.0" />
+      <point x="675.8478205128197" y="1475.5" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.PaidState" target="com.vectorx.pattern.t20_state.lendingplatform.StateEnum" relationship="DEPENDENCY">
+      <point x="95.50017948718028" y="0.0" />
+      <point x="556.0" y="662.5" />
+      <point x="556.0" y="366.0" />
+      <point x="-101.50036752136725" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.GeneratedState" target="com.vectorx.pattern.t20_state.lendingplatform.AbstractState" relationship="GENERALIZATION">
+      <point x="-120.99982051281972" y="34.5" />
+      <point x="301.0" y="1278.5" />
+      <point x="301.0" y="728.0" />
+      <point x="127.5" y="728.0" />
+      <point x="-15.0" y="97.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.AuditedState" target="com.vectorx.pattern.t20_state.lendingplatform.PublishedState" relationship="CREATE">
+      <point x="-56.5" y="-39.5" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.PublishedState" target="com.vectorx.pattern.t20_state.lendingplatform.AbstractState" relationship="GENERALIZATION">
+      <point x="1.79487180275828E-4" y="-51.0" />
+      <point x="521.223" y="882.0" />
+      <point x="301.0" y="882.0" />
+      <point x="301.0" y="728.0" />
+      <point x="127.5" y="728.0" />
+      <point x="-15.0" y="97.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.FinishedState" target="com.vectorx.pattern.t20_state.lendingplatform.AbstractState" relationship="GENERALIZATION">
+      <point x="-46.9087948717941" y="28.0" />
+      <point x="247.223" y="728.0" />
+      <point x="127.5" y="728.0" />
+      <point x="-15.0" y="97.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.PublishedState" target="com.vectorx.pattern.t20_state.lendingplatform.StateEnum" relationship="DEPENDENCY">
+      <point x="113.00017948718028" y="0.0" />
+      <point x="746.0" y="959.0" />
+      <point x="746.0" y="594.5" />
+      <point x="556.0" y="594.5" />
+      <point x="556.0" y="366.0" />
+      <point x="-101.50036752136725" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.FinishedState" target="com.vectorx.pattern.t20_state.lendingplatform.StateEnum" relationship="DEPENDENCY">
+      <point x="95.50020512820589" y="0.0" />
+      <point x="556.0" y="543.0" />
+      <point x="556.0" y="366.0" />
+      <point x="-101.50036752136725" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.GeneratedState" target="com.vectorx.pattern.t20_state.lendingplatform.FinishedState" relationship="CREATE">
+      <point x="-120.99982051281972" y="-15.0" />
+      <point x="286.0" y="1229.0" />
+      <point x="286.0" y="944.0" />
+      <point x="232.223" y="944.0" />
+      <point x="-61.9087948717941" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.Context" target="com.vectorx.pattern.t20_state.lendingplatform.State" relationship="DEPENDENCY">
+      <point x="121.0" y="15.0" />
+      <point x="829.3478205128197" y="1505.5" />
+      <point x="829.3478205128197" y="93.5" />
+      <point x="121.0" y="-15.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.NotPaidState" target="com.vectorx.pattern.t20_state.lendingplatform.FinishedState" relationship="CREATE">
+      <point x="1.79487180275828E-4" y="-51.0" />
+      <point x="441.973" y="728.0" />
+      <point x="761.0" y="728.0" />
+      <point x="761.0" y="1027.5" />
+      <point x="286.0" y="1027.5" />
+      <point x="286.0" y="944.0" />
+      <point x="232.223" y="944.0" />
+      <point x="-61.9087948717941" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.State" target="com.vectorx.pattern.t20_state.lendingplatform.Context" relationship="DEPENDENCY">
+      <point x="-119.94534188034157" y="108.5" />
+      <point x="4.0" y="959.0" />
+      <point x="270.0" y="959.0" />
+      <point x="270.0" y="1490.5" />
+      <point x="-121.0" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.Context" target="com.vectorx.pattern.t20_state.lendingplatform.AbstractState" relationship="GENERALIZATION">
+      <point x="0.0" y="-131.5" />
+      <point x="424.375" y="1312.5" />
+      <point x="301.0" y="1312.5" />
+      <point x="301.0" y="728.0" />
+      <point x="127.5" y="728.0" />
+      <point x="-15.0" y="97.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.Context" target="com.vectorx.pattern.t20_state.lendingplatform.State" relationship="TO_ONE">
+      <point x="121.0" y="0.0" />
+      <point x="814.3478205128197" y="1490.5" />
+      <point x="814.3478205128197" y="108.5" />
+      <point x="121.0" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.PublishedState" target="com.vectorx.pattern.t20_state.lendingplatform.NotPaidState" relationship="CREATE">
+      <point x="15.000179487180276" y="-51.0" />
+      <point x="94.25017948718022" y="51.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.PublishedState" target="com.vectorx.pattern.t20_state.lendingplatform.Context" relationship="DEPENDENCY">
+      <point x="-112.99982051281967" y="0.0" />
+      <point x="270.0" y="959.0" />
+      <point x="270.0" y="1490.5" />
+      <point x="-121.0" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.Client" target="com.vectorx.pattern.t20_state.lendingplatform.Context" relationship="CREATE">
+      <point x="-79.0" y="0.0" />
+      <point x="270.0" y="1700.0" />
+      <point x="270.0" y="1490.5" />
+      <point x="-121.0" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.NotPaidState" target="com.vectorx.pattern.t20_state.lendingplatform.StateEnum" relationship="DEPENDENCY">
+      <point x="97.00017948718022" y="0.0" />
+      <point x="556.0" y="805.0" />
+      <point x="556.0" y="366.0" />
+      <point x="-101.50036752136725" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.PaidState" target="com.vectorx.pattern.t20_state.lendingplatform.FinishedState" relationship="CREATE">
+      <point x="23.277179487180263" y="39.5" />
+      <point x="383.5" y="728.0" />
+      <point x="761.0" y="728.0" />
+      <point x="761.0" y="1027.5" />
+      <point x="286.0" y="1027.5" />
+      <point x="286.0" y="944.0" />
+      <point x="232.223" y="944.0" />
+      <point x="-61.9087948717941" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.AbstractState" target="com.vectorx.pattern.t20_state.lendingplatform.State" relationship="REALIZATION">
+      <point x="-18.554658119658427" y="-97.0" />
+      <point x="0.0" y="108.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.NotPaidState" target="com.vectorx.pattern.t20_state.lendingplatform.AbstractState" relationship="GENERALIZATION">
+      <point x="1.79487180275828E-4" y="51.0" />
+      <point x="441.973" y="882.0" />
+      <point x="301.0" y="882.0" />
+      <point x="301.0" y="728.0" />
+      <point x="127.5" y="728.0" />
+      <point x="-15.0" y="97.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.AuditedState" target="com.vectorx.pattern.t20_state.lendingplatform.Context" relationship="DEPENDENCY">
+      <point x="-46.22282051281968" y="39.5" />
+      <point x="531.5" y="1244.0" />
+      <point x="270.0" y="1244.0" />
+      <point x="270.0" y="1490.5" />
+      <point x="-121.0" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.PaidState" target="com.vectorx.pattern.t20_state.lendingplatform.Context" relationship="DEPENDENCY">
+      <point x="-32.749820512819724" y="39.5" />
+      <point x="327.473" y="959.0" />
+      <point x="270.0" y="959.0" />
+      <point x="270.0" y="1490.5" />
+      <point x="-121.0" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.NotPaidState" target="com.vectorx.pattern.t20_state.lendingplatform.PaidState" relationship="CREATE">
+      <point x="-14.999820512819724" y="-51.0" />
+      <point x="66.75017948718028" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.GeneratedState" target="com.vectorx.pattern.t20_state.lendingplatform.Context" relationship="DEPENDENCY">
+      <point x="-120.99982051281972" y="19.5" />
+      <point x="468.223" y="1263.5" />
+      <point x="468.223" y="1244.0" />
+      <point x="270.0" y="1244.0" />
+      <point x="270.0" y="1490.5" />
+      <point x="-121.0" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.GeneratedState" target="com.vectorx.pattern.t20_state.lendingplatform.AuditedState" relationship="CREATE">
+      <point x="-98.125" y="-51.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.NotPaidState" target="com.vectorx.pattern.t20_state.lendingplatform.Context" relationship="DEPENDENCY">
+      <point x="-96.99982051281972" y="0.0" />
+      <point x="327.473" y="805.0" />
+      <point x="327.473" y="959.0" />
+      <point x="270.0" y="959.0" />
+      <point x="270.0" y="1490.5" />
+      <point x="-121.0" y="0.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.AuditedState" target="com.vectorx.pattern.t20_state.lendingplatform.AbstractState" relationship="GENERALIZATION">
+      <point x="-106.99982051281967" y="0.0" />
+      <point x="301.0" y="1101.5" />
+      <point x="301.0" y="728.0" />
+      <point x="127.5" y="728.0" />
+      <point x="-15.0" y="97.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t20_state.lendingplatform.PaidState" target="com.vectorx.pattern.t20_state.lendingplatform.AbstractState" relationship="GENERALIZATION">
+      <point x="1.79487180275828E-4" y="39.5" />
+      <point x="360.223" y="728.0" />
+      <point x="127.5" y="728.0" />
+      <point x="-15.0" y="97.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.36327231121281467" showDependencies="true" x="402.5" y="863.9999999999999" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
