@@ -289,7 +289,7 @@ teachDirectorApprover.processRequest(purchaseRequest); //请求编号：1，处�
 
 直接对`mappedHandler`对象进行高亮，方便我们更加直观地看到`mappedHandler`是如何调用上述所说的`preHandle()`、`postHandle()`和`afterCompletion()`三个方法的
 
-![image-20220118202141860](C:/Users/Archimedes/AppData/Roaming/Typora/typora-user-images/image-20220118202141860.png)
+![image-20220118202141860](https://s2.loli.net/2022/01/18/wU7SLgOBn19d2qX.png)
 
 最终，我们找到这样两段代码，很像上述所说的`preHandle()`和`postHandle()`两个方法
 
