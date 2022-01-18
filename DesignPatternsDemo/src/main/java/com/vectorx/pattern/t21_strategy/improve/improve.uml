@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vectorx.pattern.t21_strategy.improve</OriginalElement>
+  <nodes>
+    <node x="966.0" y="170.5">com.vectorx.pattern.t21_strategy.improve.quark.GagaQuarkBehavior</node>
+    <node x="1365.0" y="170.5">com.vectorx.pattern.t21_strategy.improve.fly.BadFlyBehavior</node>
+    <node x="1442.474099099099" y="0.0">com.vectorx.pattern.t21_strategy.improve.fly.FlyBehavior</node>
+    <node x="584.0" y="170.5">com.vectorx.pattern.t21_strategy.improve.quark.GegeQuarkBehavior</node>
+    <node x="287.6722972972973" y="361.0">com.vectorx.pattern.t21_strategy.improve.duck.ToyDuck</node>
+    <node x="0.0" y="170.5">com.vectorx.pattern.t21_strategy.improve.swim.NoSwimHehavior</node>
+    <node x="1081.25" y="469.0">com.vectorx.pattern.t21_strategy.improve.Client</node>
+    <node x="794.0" y="170.5">com.vectorx.pattern.t21_strategy.improve.fly.NoFlyBehavior</node>
+    <node x="1553.0" y="136.0">com.vectorx.pattern.t21_strategy.improve.duck.Duck</node>
+    <node x="389.0" y="170.5">com.vectorx.pattern.t21_strategy.improve.quark.NoQuarkBehavior</node>
+    <node x="1176.0" y="170.5">com.vectorx.pattern.t21_strategy.improve.fly.GoodFlyBehavior</node>
+    <node x="192.0" y="170.5">com.vectorx.pattern.t21_strategy.improve.swim.CanSwimHehavior</node>
+    <node x="1099.760135135135" y="361.0">com.vectorx.pattern.t21_strategy.improve.duck.PekingDuck</node>
+    <node x="615.099099099099" y="0.0">com.vectorx.pattern.t21_strategy.improve.swim.SwimBehavior</node>
+    <node x="1061.974099099099" y="0.0">com.vectorx.pattern.t21_strategy.improve.quark.QuarkBehavior</node>
+    <node x="684.6824324324324" y="361.0">com.vectorx.pattern.t21_strategy.improve.duck.WildDuck</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.PekingDuck" target="com.vectorx.pattern.t21_strategy.improve.quark.GagaQuarkBehavior" relationship="CREATE">
+      <point x="16.875" y="-28.0" />
+      <point x="1184.135135135135" y="311.0" />
+      <point x="1061.0" y="311.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.fly.GoodFlyBehavior" target="com.vectorx.pattern.t21_strategy.improve.fly.FlyBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="1260.5" y="106.0" />
+      <point x="1300.760135135135" y="106.0" />
+      <point x="1300.760135135135" y="76.0" />
+      <point x="1475.474099099099" y="76.0" />
+      <point x="-33.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.PekingDuck" target="com.vectorx.pattern.t21_strategy.improve.duck.Duck" relationship="GENERALIZATION">
+      <point x="-50.625" y="-28.0" />
+      <point x="1116.635135135135" y="341.0" />
+      <point x="753.1824324324324" y="341.0" />
+      <point x="753.1824324324324" y="281.0" />
+      <point x="1584.75" y="281.0" />
+      <point x="-31.75" y="62.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.swim.NoSwimHehavior" target="com.vectorx.pattern.t21_strategy.improve.swim.SwimBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="86.0" y="116.0" />
+      <point x="169.9324324324324" y="116.0" />
+      <point x="169.9324324324324" y="106.0" />
+      <point x="652.099099099099" y="106.0" />
+      <point x="-37.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.Client" target="com.vectorx.pattern.t21_strategy.improve.duck.Duck" relationship="DEPENDENCY">
+      <point x="59.25" y="-28.0" />
+      <point x="1219.5" y="448.0" />
+      <point x="1668.9375" y="448.0" />
+      <point x="1668.9375" y="341.0" />
+      <point x="1648.25" y="341.0" />
+      <point x="31.75" y="62.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.PekingDuck" target="com.vectorx.pattern.t21_strategy.improve.fly.BadFlyBehavior" relationship="CREATE">
+      <point x="50.625" y="-28.0" />
+      <point x="1217.885135135135" y="341.0" />
+      <point x="1444.0" y="341.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.ToyDuck" target="com.vectorx.pattern.t21_strategy.improve.swim.NoSwimHehavior" relationship="CREATE">
+      <point x="-47.625" y="-28.0" />
+      <point x="303.5472972972973" y="341.0" />
+      <point x="86.0" y="341.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.quark.GegeQuarkBehavior" target="com.vectorx.pattern.t21_strategy.improve.quark.QuarkBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="679.0" y="116.0" />
+      <point x="732.8074324324324" y="116.0" />
+      <point x="732.8074324324324" y="86.0" />
+      <point x="1100.474099099099" y="86.0" />
+      <point x="-38.5" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.fly.BadFlyBehavior" target="com.vectorx.pattern.t21_strategy.improve.fly.FlyBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="1444.0" y="106.0" />
+      <point x="1300.760135135135" y="106.0" />
+      <point x="1300.760135135135" y="76.0" />
+      <point x="1475.474099099099" y="76.0" />
+      <point x="-33.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.WildDuck" target="com.vectorx.pattern.t21_strategy.improve.duck.Duck" relationship="GENERALIZATION">
+      <point x="15.875" y="-28.0" />
+      <point x="764.0574324324324" y="341.0" />
+      <point x="753.1824324324324" y="341.0" />
+      <point x="753.1824324324324" y="281.0" />
+      <point x="1584.75" y="281.0" />
+      <point x="-31.75" y="62.5" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.ToyDuck" target="com.vectorx.pattern.t21_strategy.improve.quark.NoQuarkBehavior" relationship="CREATE">
+      <point x="-15.875" y="-28.0" />
+      <point x="335.2972972972973" y="301.0" />
+      <point x="476.5" y="301.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.Duck" target="com.vectorx.pattern.t21_strategy.improve.swim.SwimBehavior" relationship="TO_ONE">
+      <point x="-42.33333333333334" y="-62.5" />
+      <point x="1574.1666666666665" y="96.0" />
+      <point x="726.0990990990991" y="96.0" />
+      <point x="37.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.quark.GagaQuarkBehavior" target="com.vectorx.pattern.t21_strategy.improve.quark.QuarkBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="1061.0" y="116.0" />
+      <point x="732.8074324324324" y="116.0" />
+      <point x="732.8074324324324" y="86.0" />
+      <point x="1100.474099099099" y="86.0" />
+      <point x="-38.5" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.Duck" target="com.vectorx.pattern.t21_strategy.improve.fly.FlyBehavior" relationship="TO_ONE">
+      <point x="42.33333333333334" y="-62.5" />
+      <point x="1658.8333333333335" y="76.0" />
+      <point x="1541.474099099099" y="76.0" />
+      <point x="33.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.Duck" target="com.vectorx.pattern.t21_strategy.improve.quark.QuarkBehavior" relationship="TO_ONE">
+      <point x="-7.105427357601002E-15" y="-62.5" />
+      <point x="1616.5" y="86.0" />
+      <point x="1177.474099099099" y="86.0" />
+      <point x="38.5" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.Client" target="com.vectorx.pattern.t21_strategy.improve.duck.PekingDuck" relationship="CREATE">
+      <point x="19.75" y="-28.0" />
+      <point x="1180.0" y="448.0" />
+      <point x="1167.260135135135" y="448.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.WildDuck" target="com.vectorx.pattern.t21_strategy.improve.quark.GegeQuarkBehavior" relationship="CREATE">
+      <point x="-47.625" y="-28.0" />
+      <point x="700.5574324324324" y="301.0" />
+      <point x="679.0" y="301.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.Client" target="com.vectorx.pattern.t21_strategy.improve.duck.WildDuck" relationship="CREATE">
+      <point x="-19.75" y="-28.0" />
+      <point x="1140.5" y="438.0" />
+      <point x="748.1824324324324" y="438.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.swim.CanSwimHehavior" target="com.vectorx.pattern.t21_strategy.improve.swim.SwimBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="280.5" y="116.0" />
+      <point x="169.9324324324324" y="116.0" />
+      <point x="169.9324324324324" y="106.0" />
+      <point x="652.099099099099" y="106.0" />
+      <point x="-37.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.quark.NoQuarkBehavior" target="com.vectorx.pattern.t21_strategy.improve.quark.QuarkBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="476.5" y="116.0" />
+      <point x="732.8074324324324" y="116.0" />
+      <point x="732.8074324324324" y="86.0" />
+      <point x="1100.474099099099" y="86.0" />
+      <point x="-38.5" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.WildDuck" target="com.vectorx.pattern.t21_strategy.improve.fly.GoodFlyBehavior" relationship="CREATE">
+      <point x="-15.875" y="-28.0" />
+      <point x="732.3074324324324" y="321.0" />
+      <point x="1260.5" y="321.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.fly.NoFlyBehavior" target="com.vectorx.pattern.t21_strategy.improve.fly.FlyBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="870.0" y="106.0" />
+      <point x="1300.760135135135" y="106.0" />
+      <point x="1300.760135135135" y="76.0" />
+      <point x="1475.474099099099" y="76.0" />
+      <point x="-33.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.WildDuck" target="com.vectorx.pattern.t21_strategy.improve.swim.CanSwimHehavior" relationship="CREATE">
+      <point x="47.625" y="-28.0" />
+      <point x="795.8074324324324" y="331.0" />
+      <point x="839.0574324324324" y="331.0" />
+      <point x="839.0574324324324" y="291.0" />
+      <point x="280.5" y="291.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.Client" target="com.vectorx.pattern.t21_strategy.improve.duck.ToyDuck" relationship="CREATE">
+      <point x="-59.25" y="-28.0" />
+      <point x="1101.0" y="448.0" />
+      <point x="351.1722972972973" y="448.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.PekingDuck" target="com.vectorx.pattern.t21_strategy.improve.swim.CanSwimHehavior" relationship="CREATE">
+      <point x="-16.875" y="-28.0" />
+      <point x="1150.385135135135" y="331.0" />
+      <point x="839.0574324324324" y="331.0" />
+      <point x="839.0574324324324" y="291.0" />
+      <point x="280.5" y="291.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.ToyDuck" target="com.vectorx.pattern.t21_strategy.improve.fly.NoFlyBehavior" relationship="CREATE">
+      <point x="15.875" y="-28.0" />
+      <point x="367.0472972972973" y="311.0" />
+      <point x="870.0" y="311.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.vectorx.pattern.t21_strategy.improve.duck.ToyDuck" target="com.vectorx.pattern.t21_strategy.improve.duck.Duck" relationship="GENERALIZATION">
+      <point x="47.625" y="-28.0" />
+      <point x="398.7972972972973" y="341.0" />
+      <point x="753.1824324324324" y="341.0" />
+      <point x="753.1824324324324" y="281.0" />
+      <point x="1584.75" y="281.0" />
+      <point x="-31.75" y="62.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6988235294117647" showDependencies="true" x="840.0" y="262.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
