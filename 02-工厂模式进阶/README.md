@@ -352,3 +352,5 @@ public class X3PhoneComponentFactory extends PhoneComponentFactory {
 [^1]:[产品族和产品等级结构 - 简书 (jianshu.com)](https://www.jianshu.com/p/f1e837cab952)
 [^2]:[工厂三兄弟之抽象工厂模式（二）_刘伟技术博客-CSDN博客](https://blog.csdn.net/lovelion/article/details/9319323)
 
+[^3]: [抽象工厂模式（详解版） (biancheng.net)](http://c.biancheng.net/view/1351.html)
+
